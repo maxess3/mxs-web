@@ -1,0 +1,61 @@
+@import '../node_modules/@splidejs/splide/dist/css/splide.min.css';
+
+.splide__arrow svg{
+    fill: white;
+    width: 1.7em;
+    height: 1.7em;
+}
+
+.splide__arrow--prev, .splide__arrow--next{
+    background-color: #1A4AD7;
+    width: 100px;
+    height: 100px;
+}
+
+.splide__arrow--prev{
+    left: 3em;
+}
+
+.splide__arrow--next{
+    right: 3em;
+}
+
+@media screen and (max-width: 1024px){
+    .splide__arrow svg{
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .splide__arrow--prev, .splide__arrow--next{
+        width: 5em;
+        height: 5em;
+    }
+
+    .splide__arrow--prev{
+        left: 1.6em;
+    }
+
+    .splide__arrow--next{
+        right: 1.6em;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .splide__arrow svg{
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    .splide__arrow--prev, .splide__arrow--next{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .splide__arrow--prev{
+        left: 0.7em;
+    }
+
+    .splide__arrow--next{
+        right: 0.7em;
+    }
+}
