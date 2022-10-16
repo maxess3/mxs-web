@@ -2,7 +2,7 @@ import * as THREE from 'three';
 
 import GUI from 'lil-gui'; 
 
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 // const gui = new GUI();
 
@@ -42,13 +42,29 @@ camera.position.z = 22;
 // gui.add(sphere.rotation, 'y', -20, 20).name('camera y');
 // gui.add(sphere.rotation, 'z', -20, 20).name('camera z');
 
+// Animation
 let time = Date.now();
 function animate() {
     const currentTime = Date.now();
     const deltaTime = currentTime - time;
     time = currentTime;
 	requestAnimationFrame( animate );
-	renderer.render( scene, camera );
+	render();
     sphere.rotation.y += 0.0001 * deltaTime;
 }
 animate();
+
+// Resize object
+window.addEventListener( 'resize', onWindowResize, false );
+
+function onWindowResize(){
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    render();
+}
+
+// Render
+function render(){
+    renderer.render( scene, camera );
+}
