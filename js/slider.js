@@ -1,9 +1,9 @@
 import Splide from '@splidejs/splide';
 
-new Splide( '.splide', {
+var splide = new Splide( '.splide', {
     perPage: 3,
-    gap: '1.5rem',
-    height: '300px',
+    gap: '2.2rem',
+    height: '400px',
     breakpoints: {
         1280: {
             perPage: 2,
