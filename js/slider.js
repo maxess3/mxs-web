@@ -2,7 +2,7 @@ import Splide from '@splidejs/splide';
 
 var splide = new Splide( '.splide', {
     perPage: 3,
-    gap: '2.2rem',
+    gap: '2rem',
     height: '400px',
     breakpoints: {
         1280: {
