@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 
-import GUI from 'lil-gui'; 
+import { gsap } from "gsap";
 
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import GUI from 'lil-gui'; 
 
 // const gui = new GUI();
 
@@ -68,3 +68,5 @@ function onWindowResize(){
 function render(){
     renderer.render( scene, camera );
 }
+
+gsap.from(sphere.rotation, { duration: 1, y: -10 });
