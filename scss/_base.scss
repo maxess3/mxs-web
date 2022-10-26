@@ -1,1 +1,96 @@
+@keyframes TransitioningBackground {
+  0% {
+    background-position: 1% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 1% 0%;
+  }
+}
 
+.subscribe-button {
+  // for shine & gradient effects to work
+  position: relative;
+  overflow: hidden;
+  // for background color shift
+  // background-image: (linear-gradient(270deg, #1039AF, #1039AF));
+  background-size: 400% 400%;
+  animation: TransitioningBackground 10s ease infinite;
+  // to ease the button growth on hover
+  transition: 0.3s;
+
+  // psuedo-element shine animation left side
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    top: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) skewX(-15deg);
+  }
+
+  // psuedo-element shine animation right side
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 100%;
+    top: 0;
+    filter: blur(5px);
+    transform: translateX(-100px) skewX(-15deg);
+  }
+
+  // grow button and change background gradient on hover
+  &:hover {
+    // background-image: (linear-gradient(to left, #1039AF, #092C94));
+    transform: scale(1.1);
+    // psuedo-elements for right- and left-side shine animations
+    &::before,
+    &::after {
+      transform: translateX(300px) skewX(-15deg);
+      // transition: 0.95s;
+    }
+  }
+}
+
+.btn-1,
+.btn-2{
+    background-image: (linear-gradient(270deg, #1039AF, #1039AF));
+    &:hover {
+      background-image: (linear-gradient(to left, #1039AF, #092C94));
+    }
+}
+
+.btn-1{
+  &:hover {
+    &::before,
+    &::after {
+      transition: 0.95s;
+    }
+  }
+}
+
+.btn-2{
+  &:hover {
+    &::before,
+    &::after {
+      transition: 0.5s;
+    }
+  }
+}
+
+.btn-3{
+    background-image: (linear-gradient(270deg, #1A4AD7, #1A4AD7));
+    &:hover {
+      background-image: (linear-gradient(to left, #1A4AD7, #1039AF));
+      &::before,
+      &::after {
+        transition: 0.6s;
+      }
+    }
+}

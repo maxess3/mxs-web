@@ -15,9 +15,6 @@ module.exports = {
       sans: ['Poppins', 'sans-serif'],
       heading: ['Orbitron', 'sans-serif'],
     },
-    backgroundImage: {
-      'round' : 'url("../assets/png/test.png")',
-    }
   },
   plugins: [],
 }

@@ -2,10 +2,6 @@ import * as THREE from 'three';
 
 import { gsap } from "gsap";
 
-import GUI from 'lil-gui'; 
-
-// const gui = new GUI();
-
 const webgl = document.querySelector(".webgl");
 
 const sizes = 
@@ -30,17 +26,6 @@ scene.add(sphere);
 sphere.position.y = -7;
 sphere.rotation.z = 10;
 camera.position.z = 22;
-
-// GUI Helper
-// gui.add(sphere.position, 'x', -20, 20).name('sphere x');
-// gui.add(sphere.position, 'y', -20, 20).name('sphere y');
-// gui.add(sphere.position, 'z', -20, 20).name('sphere z');
-// gui.add(camera.position, 'x', -20, 20).name('camera x');
-// gui.add(camera.position, 'y', -20, 20).name('camera y');
-// gui.add(camera.position, 'z', -20, 20).name('camera z');
-// gui.add(sphere.rotation, 'x', -20, 20).name('camera x');
-// gui.add(sphere.rotation, 'y', -20, 20).name('camera y');
-// gui.add(sphere.rotation, 'z', -20, 20).name('camera z');
 
 // Animation
 let time = Date.now();
@@ -69,4 +54,5 @@ function render(){
     renderer.render( scene, camera );
 }
 
+// Animation start
 gsap.from(sphere.rotation, { duration: 1, y: -10 });
