@@ -10,20 +10,20 @@
     <link href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/brands.min.css" />
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/solid.min.css" />
-    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </head>
 <body class="bg-light-blue">
 <div id="menu-mobile" class="w-full bg-light-blue h-screen top-0 z-40 absolute xl:hidden hidden text-white sm:px-12 px-6 xl:py-0 md:py-4 py-4">
     <div class="container mx-auto flex h-full flex-col justify-between">
         <div class="lg:mt-32 mt-28">
-            <ul class="lg:space-y-14 md:space-y-10 sm:space-y-10 space-y-8 lg:text-2xl md:text-xl sm:text-xl text-xl">
-                <li class=""><a href="index.html">Accueil</a></li>
-                <li class="opacity-75"><a href="index.html" class="opacity-75 hover:opacity-100 transition-opacity">Services</a></li>
-                <li class="opacity-75"><a href="tarifs.html" class="opacity-75 hover:opacity-100 transition-opacity">Tarifs</a></li>
-                <li class="opacity-75"><a href="index.html" class="opacity-75 hover:opacity-100 transition-opacity">Réalisations</a></li>
+            <ul id="mobile-landscape-menu" class="lg:space-y-14 md:space-y-10 sm:space-y-10 space-y-8 lg:text-2xl md:text-xl sm:text-xl text-xl">
+                <li class="link-landscape"><a href="index.html">Accueil</a></li>
+                <li class="link-landscape opacity-75"><a href="services.html" class="opacity-75 hover:opacity-100 transition-opacity">Services</a></li>
+                <li class="link-landscape opacity-75"><a href="tarifs.html" class="opacity-75 hover:opacity-100 transition-opacity">Tarifs</a></li>
+                <li class="link-landscape opacity-75"><a href="realisations.html" class="opacity-75 hover:opacity-100 transition-opacity">Réalisations</a></li>
             </ul>
         </div>
-        <div class="container mb-20">
+        <div id="social-mobile" class="container mb-32">
             <div class="flex justify-center space-x-8">
                 <a href="#" class="bg-[#2756df] p-2 rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <svg class="lg:w-8 lg:h-8 w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
@@ -45,7 +45,7 @@
         </div>
     </div>
 </div>
-<header class="w-full text-white bg-light-blue relative overflow-hidden">
+<header class="w-full text-white bg-cover bg-lb relative overflow-hidden">
     <!---- NAV CTN ---->
     <div class="sm:px-12 px-6 xl:py-0 md:py-4 py-4">
         <nav class="block container mx-auto relative">
@@ -61,13 +61,13 @@
                 <!-- NAV DESKTOP -->
                 <ul class="hidden xl:flex items-center justify-center w-full text-lg font-normal">
                     <li class="mx-10"><a href="index.html">Accueil</a></li>
-                    <li class="mx-10 opacity-75"><a href="index.html">Services</a></li>
+                    <li class="mx-10 opacity-75"><a href="services.html">Services</a></li>
                     <li class="mx-10 opacity-75"><a href="tarifs.html">Tarifs</a></li>
-                    <li class="mx-10 opacity-75"><a href="index.html">Réalisations</a></li>
+                    <li class="mx-10 opacity-75"><a href="realisations.html">Réalisations</a></li>
                 </ul>
                 <!-- NAV DESKTOP -->
                 <span class="xl:flex hidden py-5">
-                    <button class="subscribe-button btn-1 rounded-2xl flex items-center shadow-lg  px-8 py-4 text-lg">Contact</button>
+                    <a href="./realisations.html" class="subscribe-button btn-1 rounded-2xl flex items-center shadow-lg px-8 py-4 text-lg">Contact</a>
                 </span>
             </div>
         </nav>
@@ -75,7 +75,7 @@
         <div class="sm:pb-72 pb-60 container mx-auto font-heading relative z-30">
             <div class="gsap-hero-title sm:mt-10 mt-10 flex flex-col items-center relative">
                 <h1 id="first-title" style="line-height: 1.7em;" class="gsap-title text-center xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl text-2xl overflow-hidden"><span class="inline-block translate-y-full gsap-title scale-110">Vous accompagner dans votre<br/><span class="font-bold" class="mt-10"><span>transformation digitale</span> en toute sécurité</span></span></h1>
-                <a class="gsap-hero-btn" href="https://www.malt.fr/profile/maximeschellenberger" target="_blank"><button class="bg-dark-blue subscribe-button btn-2 shadow-lg py-4 px-8 font-sans sm:mt-8 mt-6 text-lg rounded-2xl">Voir mon profil sur malt.fr<i class="ml-3 fa-solid fa-arrow-up-right-from-square"></i></button></a> 
+                <a class="opacity-0 relative -top-2 font-sans gsap-hero-btn cursor-pointer subscribe-button btn-2 rounded-2xl flex items-center shadow-lg sm:mt-8 mt-6 px-8 py-4 text-lg" href="https://www.malt.fr/profile/maximeschellenberger" target="_blank">Voir mon profil sur malt<i class="ml-3 fa-solid fa-arrow-up-right-from-square"></i></a> 
             </div>
             <div class="gsap-hero-side relative mt-20">
                 <ul class="sm:text-3xl text-2xl font-bold" style="direction: rtl;">
@@ -127,7 +127,6 @@
                 <div class="before:absolute before:content-['01'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]">
                     <h3 class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4">Création de site internet</h3>
                     <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">Démarquez-vous de la concurrence avec un site optimisé et ergonomique</p>
-                    <!-- <span class="px-4 py-2 text-md text-white bg-[#476DDE] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible maintenant <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span> -->
                 </div>
             </div>
         </div>
@@ -136,7 +135,6 @@
                 <div class="before:absolute before:content-['02'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]">
                     <h3 class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4">Refonte de site internet</h3>
                     <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">Renforcer votre image de marque avec un site performant et adapté à votre activité </p>
-                    <!-- <span class="px-4 py-2 text-md text-white bg-[#476DDE] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible maintenant <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span> -->
                 </div>
             </div>
         </div>
@@ -145,7 +143,6 @@
                 <div class="before:absolute before:content-['03'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]">
                     <h3 class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4">Référencement naturel (SEO)</h3>
                     <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">Augmenter votre traffic en améliorant votre positionnement sur les moteurs de recherche</p>
-                    <!-- <span class="px-4 py-2 text-md text-white bg-[#476DDE] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible maintenant <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span> -->
                 </div>
             </div>
         </div>
@@ -154,18 +151,17 @@
                 <div class="before:absolute before:content-['04'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]">
                     <h3 class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4">Référencement payant (SEA)</h3>
                     <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">Améliorer rapidement votre taux de conversion grâce à l'optimisation des publicités en ligne</p>
-                    <!-- <span class="px-4 py-2 text-md text-white bg-[#476DDE] opacity-95 rounded-2xl text-base mt-3 inline-block">Bientot disponible <span class="w-3 h-3 bg-[orange] ml-2 rounded-full inline-block animate-pulse"></span></span> -->
                 </div>
             </div>
         </div>
         <div class="mx-auto lg:px-24">
             <div class="flex justify-center lg:container md:container sm:w-full w-full mx-auto bg-[#FAFAFA] rounded-b-xl lg:px-24">
-                <button class="subscribe-button btn-3 shadow-lg rounded-2xl py-4 px-8 font-sans text-lg mt-12 mb-20">Voir tous les services<i class="fa-solid fa-chevron-right ml-3 opacity-80"></i></button>
+                <a class="cursor-pointer subscribe-button btn-3 shadow-lg rounded-2xl py-4 px-8 font-sans text-lg mt-12 mb-20">Voir tous les services<i class="fa-solid fa-chevron-right ml-3 opacity-80"></i></a>
             </div>
         </div>
     </div>
 </section>
-<section class="text-white bg-light-blue -mt-64 sm:pb-36 pb-24 w-full">
+<section class="text-white bg-cover bg-lb -mt-64 sm:pb-36 pb-24 w-full">
     <div class="xl:w-7/12 lg:w-10/12 md:w-full sm:text-center sm:pt-52 container mx-auto pt-40 px-8 text-left">
         <h2 class="md:text-4xl sm:text-3xl sm:p-0 sm:leading-normal text-2xl font-heading leading-relaxed"><span class="relative bg-[#0f349f] inline-flex justify-center items-center sm:p-4 p-3 rounded-2xl sm:mr-4 mr-2" style="bottom: 3px;"><i class="fa-solid fa-rocket sm:text-2xl text-lg"></i></span>Faites <span class="font-bold">décoller</span> votre activité</h2>
         <p class="text-[#e6e6e6] sm:text-xl sm:mt-6 mt-4 text-lg" style="line-height: 2.3rem;">Vous souhaitez <span class="font-semibold">booster</span> votre traffic, vos ventes... afin de dégager de plus <span class="font-semibold">gros revenus rapidement</span> ? Les <span class="font-semibold">stratégies digitales</span> sont essentielles pour garantir une croissance <span class="font-semibold">rapide</span> et <span class="font-semibold">durable</span></p>
@@ -285,26 +281,13 @@
         </div>
     </div>
 </section>
-<!-- <section class="bg-[#1A45C6] w-full pb-32">
-    <div class="xl:w-8/12 lg:w-10/12 md:w-full sm:text-center sm:pt-20 pt-12 container mx-auto px-8 text-left text-light-blue">
-        <h2 class="md:text-4xl sm:text-3xl sm:p-0 sm:leading-normal text-2xl font-heading leading-relaxed text-white">Qui suis-je ?</h2>
-        <p class="text-dark-blue opacity-80 sm:text-xl sm:mt-6 mt-4 text-lg" style="line-height: 2.3rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed turpis nec ante pulvinar cursus. Suspendisse interdum tincidunt quam eget facilisis. Nullam vulputate</p>
-    </div> 
-    <div class="container mx-auto flex px-8">
-        <div class="sm:py-1 py-12 mt-16 xl:w-[900px] lg:w-[800px] md:w-[800px] flex md:flex-row sm:flex-col flex-col justify-around items-center bg-[#f6f6f6] mx-auto border-2 border-[#D1D1D1] rounded-full shadow-xl">
-            <span class="opacity-80 hover:opacity-100 hover:transition-opacity hover:duration-200 transition-opacity duration-400"><img class="lg:w-[72px] md:w-16 md:mt-0 sm:w-16 sm:mt-10 w-16" src="./assets/png/hydro-logo.png" alt=""></span>
-            <span class="opacity-80 hover:opacity-100 hover:transition-opacity hover:duration-200 transition-opacity duration-400"><img class="lg:w-[250px] md:w-60 md:mt-0 sm:w-56 sm:mt-8 w-56 mt-10" src="./assets/png/cloture-ares-logo.png" alt=""></span>
-            <span class="opacity-80 hover:opacity-100 hover:transition-opacity hover:duration-200 transition-opacity duration-400"><img class="relative top-1.5 lg:w-[90px] md:w-20 md:mt-0 md:mb-0 sm:w-20 sm:mt-10 sm:mb-10 mt-12 w-20" src="./assets/png/certop-logo.png" alt=""></span>
-        </div>
-    </div>
-</section> -->
 <section class="bg-[#1a45c7] md:pb-24 sm:pb-20 w-full px-8 pb-14">
     <div class="xl:w-7/12 lg:w-10/12 md:w-full sm:text-center container mx-auto md:pt-16 sm:pt-12 pt-8 px-2 text-left">
         <h2 class="md:text-4xl sm:text-3xl sm:p-0 sm:leading-normal text-2xl font-heading leading-relaxed text-white"><span class="relative bg-[#0f349f] inline-flex justify-center items-center sm:p-4 p-3 rounded-2xl sm:mr-4 mr-2" style="bottom: 3px;"><i class="fa-solid fa-user sm:text-2xl text-lg"></i></span>Qui <span class="font-bold">suis-je ?</span></h2>
         <p class="text-[#e6e6e6] sm:text-xl sm:mt-6 mt-4 text-lg" style="line-height: 2.3rem;">Vous cherchez un <span class="font-semibold">développeur front-end</span>, un <span class="font-semibold">designer UI/UX</span> ou... les deux ? Vous êtes au bon endroit, je serais ravi de vous aider à <span class="font-semibold">concrétiser vos projets</span> et <span class="font-semibold">atteindre vos objectifs</span></p>
     </div>
     <div class="xl:w-8/12 lg:w-11/12 bg-[#2e5ee9] rounded-xl mx-auto relative mt-10">
-        <img src="./assets/png/maxime.webp" width="320px" height="100%" alt="Photo de Maxime" class="sm:absolute relative sm:bottom-0 sm:right-0 xl:w-[320px] sm:w-[240px] w-[200px] sm:mb-0 -mb-2 right-4">
+        <img src="./assets/png/maxime.webp" width="320" height="200" alt="Photo de Maxime" class="sm:absolute relative sm:bottom-0 sm:right-0 xl:w-[320px] sm:w-[240px] w-[200px] sm:mb-0 -mb-2 right-4">
         <div class="xl:flex-row lg:flex-col flex-col flex items-center justify-center">
             <div class="sm:p-8 pb-6 pl-6 pr-6">
                 <h3 class="text-2xl text-white font-bold font-heading text-left sm:mt-0 mt-4 relative z-20">Maxime Schellenberger</h3>
@@ -315,91 +298,93 @@
                     <span class="sm:ml-2 sm:mt-0 mt-4 ml-0 px-4 py-2 text-md text-white bg-light-blue opacity-95 rounded-2xl text-base inline-block">Marketing digital</span>
                 </div>
                 <div class="inline-flex justify-center">
-                    <button class="subscribe-button btn-1 mt-8 rounded-2xl text-white flex items-center shadow-lg px-8 py-4 text-lg">Me contacter</button>
+                    <a class="cursor-pointer subscribe-button btn-1 mt-8 rounded-2xl text-white flex items-center shadow-lg px-8 py-4 text-lg">Me contacter</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="bg-light-blue w-full px-8 pb-8">
-    <div class="xl:w-7/12 lg:w-10/12 md:w-full sm:text-center container mx-auto md:pt-16 sm:pt-12 pt-8 px-2 text-left">
-        <h2 class="md:text-4xl sm:text-3xl sm:p-0 sm:leading-normal text-2xl font-heading leading-relaxed text-white"><span class="relative bg-[#0f349f] inline-flex justify-center items-center sm:p-4 p-3 rounded-2xl sm:mr-4 mr-2" style="bottom: 3px;"><i class="fa-solid fa-heart sm:text-2xl text-lg"></i></span>On me <span class="font-bold">recommande</span></h2>
-        <p class="text-[#e6e6e6] sm:text-xl sm:mt-6 mt-4 text-lg" style="line-height: 2.3rem;">La <span class="font-semibold">confiance</span> grandit naturellement suite à de nouvelles <span class="font-semibold">recommandations</span>. À l'heure actuelle, <span class="font-semibold">chaque client</span> a été <span class="font-semibold">totalement satisfait</span> du travail accompli.</p>
-    </div>
-    <div class="md:mt-10 sm:mt-4 mt-8 drop-shadow-xl xl:container lg:container md:w-full xl:w-10/12 lg:w-11/12 rounded-xl mx-auto flex xl:flex-row flex-col xl:justify-between xl:items-start items-center">
-        <div class="xl:w-[49%] w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]">
-            <h3 class="text-2xl text-white font-bold font-heading">Frédéric Alibert</h3>
-            <h4 class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80">Directeur de l'agence Clôture Arès Toulouse</h4>
-            <p class="xl:text-lg lg:text-lg md:text-lg text-base relative mt-4 text-white opacity-90" style="line-height: 1.9em;">
-            J'ai accueilli <span class="font-semibold">Maxime SCHELLENBERGER</span> au sein de l'Agence Clôture Arès. Il a tenu pendant deux ans un poste d'alternant en tant que chef de projet junior dans le digital et développeur WEB. J'ai été particulièrement <span class="font-semibold">satisfait</span> de son <span class="font-semibold">implication</span>, de son <span class="font-semibold">sérieux</span> et du <span class="font-semibold">travail</span> qu'il a mené en <span class="font-semibold">parfaite autonomie</span>. Au cours de ses missions, il a fait preuve d'une implication certaine et d'une réelle <span class="font-semibold">force de proposition</span>, en présentant et mettant en œuvre des <span class="font-semibold">idées innovantes</span> démontrant ses différentes capacités dans les métiers du digital.
-            Au cours de la tenue de son poste, Maxime aura créé un site internet fonctionnel en structurant et organisant en autonomie les multiples domaines techniques d'un tel projet.
-            Je le <span class="font-semibold">recommande</span> vivement.    
-            </p>
-            <p class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50">Commentaire provenant de Malt.fr | 2022</p>
+<div class="bg-lb bg-cover">
+    <section class="w-full px-8 pb-8">
+        <div class="xl:w-7/12 lg:w-10/12 md:w-full sm:text-center container mx-auto md:pt-16 sm:pt-12 pt-8 px-2 text-left">
+            <h2 class="md:text-4xl sm:text-3xl sm:p-0 sm:leading-normal text-2xl font-heading leading-relaxed text-white"><span class="relative bg-[#0f349f] inline-flex justify-center items-center sm:p-4 p-3 rounded-2xl sm:mr-4 mr-2" style="bottom: 3px;"><i class="fa-solid fa-heart sm:text-2xl text-lg"></i></span>On me <span class="font-bold">recommande</span></h2>
+            <p class="text-[#e6e6e6] sm:text-xl sm:mt-6 mt-4 text-lg" style="line-height: 2.3rem;">La <span class="font-semibold">confiance</span> grandit naturellement suite à de nouvelles <span class="font-semibold">recommandations</span>. À l'heure actuelle, <span class="font-semibold">chaque client</span> a été <span class="font-semibold">totalement satisfait</span> du travail accompli.</p>
         </div>
-        <div class="xl:w-[49%] xl:mt-0 mt-8 w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]">
-            <h3 class="text-2xl text-white font-bold font-heading">Jonathan Ernie</h3>
-            <h4 class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80">Responsable marketing de l'agence Clôture Arès Toulouse</h4>
-            <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-4" style="line-height: 1.9em;">
-            <span class="font-semibold">Professionnel et impliqué</span> dans son travail, Monsieur Schellenberger a développé notre site et le référencement de notre catalogue.
-<span class="font-semibold">Je recommande</span>.
-            </p>
-            <p class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50">Commentaire provenant de Malt.fr | 2022</p>
+        <div class="md:mt-10 sm:mt-4 mt-8 drop-shadow-xl xl:container lg:container md:w-full xl:w-10/12 lg:w-11/12 rounded-xl mx-auto flex xl:flex-row flex-col xl:justify-between xl:items-start items-center">
+            <div class="xl:w-[49%] w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]">
+                <h3 class="text-2xl text-white font-bold font-heading">Frédéric Alibert</h3>
+                <h4 class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80">Directeur de l'agence Clôture Arès Toulouse</h4>
+                <p class="xl:text-lg lg:text-lg md:text-lg text-base relative mt-4 text-white opacity-90" style="line-height: 1.9em;">
+                J'ai accueilli <span class="font-semibold">Maxime SCHELLENBERGER</span> au sein de l'Agence Clôture Arès. Il a tenu pendant deux ans un poste d'alternant en tant que chef de projet junior dans le digital et développeur WEB. J'ai été particulièrement <span class="font-semibold">satisfait</span> de son <span class="font-semibold">implication</span>, de son <span class="font-semibold">sérieux</span> et du <span class="font-semibold">travail</span> qu'il a mené en <span class="font-semibold">parfaite autonomie</span>. Au cours de ses missions, il a fait preuve d'une implication certaine et d'une réelle <span class="font-semibold">force de proposition</span>, en présentant et mettant en œuvre des <span class="font-semibold">idées innovantes</span> démontrant ses différentes capacités dans les métiers du digital.
+                Au cours de la tenue de son poste, Maxime aura créé un site internet fonctionnel en structurant et organisant en autonomie les multiples domaines techniques d'un tel projet.
+                Je le <span class="font-semibold">recommande</span> vivement.    
+                </p>
+                <p class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50">Commentaire provenant de Malt.fr | 2022</p>
+            </div>
+            <div class="xl:w-[49%] xl:mt-0 mt-8 w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]">
+                <h3 class="text-2xl text-white font-bold font-heading">Jonathan Ernie</h3>
+                <h4 class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80">Responsable marketing de l'agence Clôture Arès Toulouse</h4>
+                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-4" style="line-height: 1.9em;">
+                <span class="font-semibold">Professionnel et impliqué</span> dans son travail, Monsieur Schellenberger a développé notre site et le référencement de notre catalogue.
+    <span class="font-semibold">Je recommande</span>.
+                </p>
+                <p class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50">Commentaire provenant de Malt.fr | 2022</p>
+            </div>
         </div>
-    </div>
-</section>
-<footer class="bg-light-blue text-white px-8">
-    <div class="drop-shadow-xl xl:container lg:container md:w-full xl:w-10/12 lg:w-11/12 bg-[#2e5ee9] rounded-tr-xl rounded-tl-xl mx-auto md:py-12 md:px-16 md:pb-16 sm:pb-16 px-8 py-8">
-        <div class="lg:flex lg:justify-between">
-            <div class="mb-6 md:mb-0">
-                <span class="lg:block md:flex md:justify-center flex justify-center md:-mt-3 sm:mt-4 mt-0">
-                    <img class="w-[180px]" src="./assets/png/logo.png" alt="Logo de l'agence digitale mxs-web" width="180" height="100">
-                </span>
-                <div class="sm:flex sm:items-center sm:justify-center rounded-lg mt-6">
-                    <div class="flex mt-4 space-x-5 sm:justify-center justify-center sm:mt-0">
-                        <a href="#" class="bg-[#2756df] p-2 rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                            <span class="sr-only">Facebook page</span>
-                        </a>
-                        <a href="#" class="bg-[#2756df] p-2 rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
-                            <span class="sr-only">Instagram page</span>
-                        </a>
-                        <a href="#" class="bg-[#2756df] p-2 rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-                            <span class="sr-only">GitHub account</span>
-                        </a>
-                        <a href="#" class="bg-[#2756df] p-2 rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
-                            <span class="sr-only">Dribbbel account</span>
-                        </a>
+    </section>
+    <footer class="text-white px-8">
+        <div class="drop-shadow-xl xl:container lg:container md:w-full xl:w-10/12 lg:w-11/12 bg-[#2e5ee9] rounded-tr-xl rounded-tl-xl mx-auto md:py-12 md:px-16 md:pb-16 sm:pb-16 px-8 py-8">
+            <div class="lg:flex lg:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <span class="lg:block md:flex md:justify-center flex justify-center md:-mt-3 sm:mt-4 mt-0">
+                        <img class="w-[180px]" src="./assets/png/logo.png" alt="Logo de l'agence digitale mxs-web" width="180" height="100">
+                    </span>
+                    <div class="sm:flex sm:items-center sm:justify-center rounded-lg mt-6">
+                        <div class="flex mt-4 space-x-5 sm:justify-center justify-center sm:mt-0">
+                            <a href="#" class="bg-[#2756df] p-2 rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                <span class="sr-only">Facebook page</span>
+                            </a>
+                            <a href="#" class="bg-[#2756df] p-2 rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                                <span class="sr-only">Instagram page</span>
+                            </a>
+                            <a href="#" class="bg-[#2756df] p-2 rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                                <span class="sr-only">GitHub account</span>
+                            </a>
+                            <a href="#" class="bg-[#2756df] p-2 rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
+                                <span class="sr-only">Dribbbel account</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:grid lg:grid-cols-2 lg:mt-0 md:mt-8 mt-8 md:flex md:justify-around sm:flex sm:justify-around">
+                    <div class="">
+                        <h2 class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white">Navigation</h2>
+                        <ul class="text-gray-600 space-y-2 dark:text-gray-400">
+                            <li><a href="index.html" class="hover:underline">Accueil</a></li>
+                            <li><a href="services.html" class="opacity-75 hover:opacity-100 hover:underline">Services</a></li>
+                            <li><a href="tarifs.html" class="opacity-75 hover:opacity-100 hover:underline">Tarifs</a></li>
+                            <li><a href="realisations.html" class="opacity-75 hover:opacity-100 hover:underline">Réalisations</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:ml-8 md:ml-0 sm:ml-0 sm:mt-0 ml-0 mt-6">
+                        <h2 class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white">Légal</h2>
+                        <ul class="text-gray-600 dark:text-gray-400 space-y-2">
+                            <li>
+                                <a href="#" class="opacity-75 hover:underline hover:opacity-100">Mentions légales</a>
+                            </li>
+                            <li>
+                                <a href="#" class="opacity-75 hover:underline hover:opacity-100">Politique de confidentialité</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="lg:grid lg:grid-cols-2 lg:mt-0 md:mt-8 mt-8 md:flex md:justify-around sm:flex sm:justify-around">
-                <div class="">
-                    <h2 class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white">Navigation</h2>
-                    <ul class="text-gray-600 space-y-2 dark:text-gray-400">
-                        <li><a href="index.html" class="hover:underline">Accueil</a></li>
-                        <li><a href="services.html" class="opacity-75 hover:opacity-100 hover:underline">Services</a></li>
-                        <li><a href="tarifs.html" class="opacity-75 hover:opacity-100 hover:underline">Tarifs</a></li>
-                        <li><a href="realisations.html" class="opacity-75 hover:opacity-100 hover:underline">Réalisations</a></li>
-                    </ul>
-                </div>
-                <div class="lg:ml-8 md:ml-0 sm:ml-0 sm:mt-0 ml-0 mt-6">
-                    <h2 class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white">Légal</h2>
-                    <ul class="text-gray-600 dark:text-gray-400 space-y-2">
-                        <li>
-                            <a href="#" class="opacity-75 hover:underline hover:opacity-100">Mentions légales</a>
-                        </li>
-                        <li>
-                            <a href="#" class="opacity-75 hover:underline hover:opacity-100">Politique de confidentialité</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</div>
 </body>
 </html>

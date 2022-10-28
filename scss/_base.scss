@@ -1,3 +1,20 @@
+// Landscape mobile menu
+@media screen and (max-height: 600px) and (min-width: 485px) {
+  #mobile-landscape-menu{
+    display: flex;
+    justify-content: space-around;
+    .link-landscape{
+      margin-top: 0px;
+    }
+  }
+}
+
+@media screen and (max-height: 570px) {
+  #social-mobile{
+    display: none;
+  }
+}
+
 @keyframes TransitioningBackground {
   0% {
     background-position: 1% 0%;
@@ -21,7 +38,7 @@
   // to ease the button growth on hover
   transition: 0.3s;
 
-  // psuedo-element shine animation left side
+  // pseudo-element shine animation left side
   &::before {
     content: '';
     display: block;
@@ -32,7 +49,7 @@
     transform: translateX(-100px) skewX(-15deg);
   }
 
-  // psuedo-element shine animation right side
+  // pseudo-element shine animation right side
   &::after {
     content: '';
     display: block;
@@ -49,7 +66,7 @@
   &:hover {
     // background-image: (linear-gradient(to left, #1039AF, #092C94));
     transform: scale(1.1);
-    // psuedo-elements for right- and left-side shine animations
+    // pseudo-elements for right- and left-side shine animations
     &::before,
     &::after {
       transform: translateX(300px) skewX(-15deg);
