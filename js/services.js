@@ -11,6 +11,8 @@ for(let i = 0; i < filterContainerBtn.length; i++){
             filterContainerBtn[i].classList.remove('hidden');
         }
     filterAvailableBtn.style.opacity = "0.6";
+    filterAvailableBtn.classList.replace('bg-light-blue', 'bg-[#17348a]');
+    filterAllBtn.classList.replace('bg-[#17348a]', 'bg-light-blue');
     filterAllBtn.style.opacity = "1";
 }})
 
@@ -21,5 +23,7 @@ filterAvailableBtn.addEventListener('click', () => {
         }
     }
     filterAvailableBtn.style.opacity = "1";
+    filterAvailableBtn.classList.replace('bg-[#17348a]','bg-light-blue');
+    filterAllBtn.classList.replace('bg-light-blue', 'bg-[#17348a]');
     filterAllBtn.style.opacity = "0.6";
 })

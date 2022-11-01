@@ -19,6 +19,7 @@ module.exports = {
     },
     backgroundImage: {
       'lb': "url('../assets/png/background-lb.webp')",
+        'service': "url('../assets/svg/service-undraw.svg')",
       'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
     },
   },

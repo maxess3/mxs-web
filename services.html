@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/solid.min.css" />
     <script type="module" src="./js/services.js"></script>
 </head>
-<body class="bg-lb bg-cover">
+<body class="bg-dark-blue">
 <div id="menu-mobile" class="w-full bg-light-blue h-screen top-0 z-40 absolute xl:hidden hidden text-white sm:px-12 px-6 xl:py-0 md:py-4 py-4">
     <div class="container mx-auto flex h-full flex-col justify-between">
         <div class="lg:mt-32 mt-28">
             <ul id="mobile-landscape-menu" class="lg:space-y-14 md:space-y-10 sm:space-y-10 space-y-8 lg:text-2xl md:text-xl sm:text-xl text-xl">
                 <li class="link-landscape"><a href="index.html" class="opacity-75 hover:opacity-100 transition-opacity">Accueil</a></li>
                 <li class="link-landscape"><a href="services.html">Services</a></li>
-                <li class="link-landscape"><a href="tarifs.html" class="opacity-75 hover:opacity-100 transition-opacity">Tarifs</a></li>
+                <li class="link-landscape"><a href="tarifs.html" class="opacity-75 hover:opacity-100 transition-opacity">Offre Petites Structures</a></li>
                 <li class="link-landscape"><a href="realisations.html" class="opacity-75 hover:opacity-100 transition-opacity">Réalisations</a></li>
             </ul>
         </div>
@@ -45,12 +45,12 @@
         </div>
     </div>
 </div>
-<header class="w-full text-white relative overflow-hidden">
+<header class="w-full text-white relative overflow-hidden bg-light-blue">
     <!---- NAV CTN ---->
     <div class="sm:px-12 px-6 xl:py-0 md:py-4 py-4">
         <nav class="block container mx-auto relative">
-            <div class="absolute xl:block hidden -bottom-11 right-0 rounded-xl items-center italic"><span class="opacity-50 hover:opacity-75 transition ease duration-200 cursor-pointer">Actuellement sur Toulouse</span><span class="w-3 h-3 bg-[#16CD6A] ml-3 rounded-full xl:inline-block hidden animate-pulse"></span></div>
-            <div class="nav-gsap z-40 py-2 items-center flex justify-between before:block before:absolute xl:before:-bottom-0 before:-bottom-4 before:w-full before:bg-white before:h-0.5 before:rounded-full before:content-[''] before:opacity-20 relative">
+            <div class="absolute xl:block hidden -bottom-11 right-0 rounded-xl items-center italic"><span class="opacity-50 hover:opacity-75 transition ease duration-200 cursor-default">Actuellement sur Toulouse</span><span class="w-3 h-3 bg-[#16CD6A] ml-3 rounded-full xl:inline-block hidden animate-pulse"></span></div>
+            <div class="nav-gsap z-40 py-2 items-center flex justify-between relative">
                 <div id="burger-menu" class="xl:hidden cursor-pointer w-10 h-8 flex flex-col justify-around order-2 relative z-40">
                     <span id="line-1-menu" class="inline-block w-full h-[3px] bg-[white] rounded-sm"></span>
                     <span id="line-2-menu" class="inline-block w-7/12 h-[3px] bg-[white] rounded-sm"></span>
@@ -62,7 +62,7 @@
                 <ul class="hidden xl:flex items-center justify-center w-full text-lg font-normal">
                     <li class="mx-10 opacity-75"><a href="index.html">Accueil</a></li>
                     <li class="mx-10"><a href="services.html">Services</a></li>
-                    <li class="mx-10 opacity-75"><a href="tarifs.html">Tarifs</a></li>
+                    <li class="mx-10 opacity-75"><a href="tarifs.html">Offre Petites Structures</a></li>
                     <li class="mx-10 opacity-75"><a href="realisations.html">Réalisations</a></li>
                 </ul>
                 <!-- NAV DESKTOP -->
@@ -73,68 +73,72 @@
         </nav>
     </div>
 </header>
-<section class="w-full text-white">
+<section class="w-full bg-dark-blue text-white">
     <div class="sm:px-12 px-6 xl:py-0 md:py-4 py-4">
-        <div class="container mx-auto">
-            <div class="xl:mt-10 lg:mt-4 mt-2 flex flex-col">
+        <div class="container mx-auto flex xl:flex-row lf:flex-row md:flex-col sm:flex-col flex-col justify-between items-center">
+            <div class="xl:mt-10 lg:mt-4 mt-2 flex flex-col xl:w-8/12 md:w-full">
+                <i class="mb-2 xl:text-xl lg:text-xl text-lg font-sans font-bold">Services</i>
                 <h1 style="line-height: 1.6em;" class="font-heading xl:text-4xl lg:text-4xl md:text-4xl sm:text-3xl text-2xl">De nombreux <span class="font-bold">services</span> pour <br>vous <span class="font-bold">accompagner</span></h1>
-                <h2 style="line-height: 1.7em;" class="opacity-90 xl:w-8/12 lg:w-10/12 md:w-full mt-4 xl:text-xl lg:text-xl md:text-xl sm:text-lg text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+                <h2 style="line-height: 1.7em;" class="opacity-90 mt-4 xl:text-xl lg:text-xl md:text-xl sm:text-lg text-base">La création d'un site internet devient <span class="font-semibold">indispensable</span> pour toute activité. Aujourd'hui, avec les nouvelles <span class="font-semibold">exigences</span> des moteurs de recherche, elle <span class="font-semibold">nécessite</span> de <span class="font-semibold">nombreuses compétences</span>. Se faire <span class="font-semibold">accompagner</span> par une <span class="font-semibold">agence web</span> reste le moyen le plus <span class="font-semibold">sûr</span> pour mener à bien votre projet digital en toute <span class="font-semibold">sérénité</span>.</h2>
+            </div>
+            <div class="xl:static xl:w-3/12 xl:mt-0 lg:mt-8 mt-6 mb-2">
+                <img src="./assets/svg/service-undraw.svg" alt="Illustration des services proposés" class="relative xl:w-[21rem] xl:top-24 xl:right-4 md:right-0 md:top-0 md:w-72 sm:w-60 w-56">
             </div>
         </div>
     </div>
     <div class="sm:px-12 px-6 xl:mt-8 mt-2">
-        <div class="container mx-auto flex sm:flex-row flex-col justify-center">
-            <button id="filter-all" class="ml-4 px-6 py-2 text-md text-white bg-dark-blue rounded-2xl text-base">Voir tous les services</button>
-            <button id="filter-available" class="sm:mt-0 mt-6 ml-4 px-6 py-2 text-md text-white bg-dark-blue rounded-2xl text-base opacity-60">Voir les services disponibles</button>
+        <div class="container mx-auto flex sm:flex-row flex-col justify-center sm:mb-6">
+            <button id="filter-all" class="px-6 py-2 text-md text-white bg-light-blue rounded-2xl text-base">Voir tous les services</button>
+            <button id="filter-available" class="sm:ml-4 ml-0 sm:mt-0 mt-6 px-6 py-2 text-md text-white bg-[#17348a] rounded-2xl text-base opacity-60">Voir les services de base</button>
         </div>
-        <div id="filter-container" class="md:mt-10 sm:mt-4 mt-8 drop-shadow-xl container grid xl:grid-cols-3 lg:grid-cols-2 gap-6 justify-center mx-auto md:bg-gradient-radial from-lb1 via-lb2 to-lb2">
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2e5ee9] service service-available">
+        <div id="filter-container" class="md:mt-10 sm:mt-4 mt-8 drop-shadow-xl container grid xl:grid-cols-3 lg:grid-cols-2 gap-6 justify-center mx-auto">
+            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2c5ef3] service service-available">
                 <div class="flex justify-between items-center">
-                    <h3 class="md:text-xl sm:text-xl text-lg text-white font-bold font-heading">Design UI/UX</h3>
-                    <span class="inline-flex items-center justify-center w-12 rounded-xl h-12 bg-dark-blue"><i class="fa-solid fa-table-columns sm:text-2xl text-xl"></i></span>
+                    <h3 class="text-white md:text-xl sm:text-xl text-lg font-bold font-heading">Design UI/UX</h3>
+                    <span class="inline-flex items-center justify-center w-12 rounded-xl h-12 bg-[#0937c3]"><i class="fa-solid fa-table-columns sm:text-2xl text-xl"></i></span>
                 </div>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-2" style="line-height: 1.9em;">Conception de maquettes visant à délivrer une expérience utilisateur qui répondra aux besoins de votre audience</p>
-                <span class="px-4 py-2 text-md text-white bg-light-blue opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
+                <p class="text-white xl:text-lg lg:text-lg md:text-lg text-base opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Conception</span> de <span class="font-semibold">maquettes</span> visant à délivrer une expérience utilisateur qui <span class="font-semibold">répondra</span> aux besoins de votre <span class="font-semibold">audience</span></p>
+                <span class="px-4 py-2 text-md text-white bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
             </div>
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2e5ee9] service service-available">
+            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2c5ef3] service service-available">
                 <div class="flex justify-between items-center">
-                    <h3 class="md:text-xl sm:text-xl text-lg text-white font-bold font-heading">Dev front-end</h3>
-                    <span class="inline-flex items-center justify-center w-12 rounded-xl h-12 bg-dark-blue"><i class="fa-solid fa-code sm:text-2xl text-xl"></i></span>
+                    <h3 class="text-white md:text-xl sm:text-xl text-lg font-bold font-heading">Dev front-end</h3>
+                    <span class="inline-flex items-center justify-center w-12 rounded-xl h-12 bg-[#0937c3]"><i class="fa-solid fa-code sm:text-2xl text-xl"></i></span>
                 </div>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-2" style="line-height: 1.9em;">Développement de maquettes responsive au pixel près et optimisation des performances des interfaces conçues</p>
-                <span class="px-4 py-2 text-md text-white bg-light-blue opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
+                <p class="text-white xl:text-lg lg:text-lg md:text-lg text-base opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Développement</span> de <span class="font-semibold">maquettes</span> responsive au pixel près et <span class="font-semibold">optimisation</span> des <span class="font-semibold">performances</span> des interfaces conçues</p>
+                <span class="text-white px-4 py-2 text-md bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
             </div>
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2e5ee9] service">
+            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-light-blue service">
                 <div class="flex justify-between items-center">
                     <h3 class="md:text-xl sm:text-xl text-lg text-white font-bold font-heading">Optimisations SEO</h3>
                     <span class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-dark-blue"><i class="fa-brands fa-google sm:text-2xl text-xl"></i></span>
                 </div>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-2" style="line-height: 1.9em;">Amélioration de votre positionnement sur les pages de résultats des moteurs de recherche grâce à des stratégies spécifiques</p>
-                <span class="px-4 py-2 text-md text-white bg-light-blue opacity-95 rounded-2xl text-base mt-3 inline-block">Bientôt disponible <span class="w-3 h-3 bg-[orange] ml-2 rounded-full inline-block animate-pulse"></span></span>
+                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Amélioration</span> de votre positionnement sur les pages de résultats des moteurs de recherche grâce à des <span class="font-semibold">stratégies</span> spécifiques</p>
+                <span class="text-white px-4 py-2 text-md bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
             </div>
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2e5ee9] service">
+            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-light-blue service">
                 <div class="flex justify-between items-center">
                     <h3 class="md:text-xl sm:text-xl text-lg text-white font-bold font-heading">Campagnes SEA</h3>
                     <span class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-dark-blue"><i class="fa-solid fa-chart-line sm:text-2xl text-xl"></i></span>
                 </div>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-2" style="line-height: 1.9em;">Création de campagnes sponsorisées offrant une visibilité immédiate de votre activité en générant des leads qualifiés</p>
-                <span class="px-4 py-2 text-md text-white bg-light-blue opacity-95 rounded-2xl text-base mt-3 inline-block">Bientôt disponible <span class="w-3 h-3 bg-[orange] ml-2 rounded-full inline-block animate-pulse"></span></span>
+                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Création</span> de <span class="font-semibold">campagnes</span> sponsorisées offrant une <span class="font-semibold">visibilité</span> immédiate de votre activité en générant des <span class="font-semibold">leads</span> qualifiés</p>
+                <span class="text-white px-4 py-2 text-md bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
             </div>
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2e5ee9] service">
+            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-light-blue service">
                 <div class="flex justify-between items-center">
                     <h3 class="md:text-xl sm:text-xl text-lg text-white font-bold font-heading">Identité visuelle</h3>
                     <span class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-dark-blue"><i class="fa-solid fa-pen-nib sm:text-2xl text-xl"></i></span>
                 </div>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-2" style="line-height: 1.9em;">Création de chartes graphiques, de logos et divers supports de communications utilisables directement sur les réseaux sociaux</p>
-                <span class="px-4 py-2 text-md text-white bg-light-blue opacity-95 rounded-2xl text-base mt-3 inline-block">Bientôt disponible <span class="w-3 h-3 bg-[orange] ml-2 rounded-full inline-block animate-pulse"></span></span>
+                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Création</span> de <span class="font-semibold">chartes graphiques</span>, de <span class="font-semibold">logos</span> et divers <span class="font-semibold">supports de communication</span> utilisables directement sur les réseaux sociaux</p>
+                <span class="text-white px-4 py-2 text-md bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
             </div>
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2e5ee9] service">
+            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-light-blue service">
                 <div class="flex justify-between items-center">
                     <h3 class="md:text-xl sm:text-xl text-lg text-white font-bold font-heading">Community management</h3>
                     <span class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-dark-blue"><i class="fa-brands fa-twitter sm:text-2xl text-xl"></i></span>
                 </div>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-2" style="line-height: 1.9em;">Constitution et animation d'une communauté sur les réseaux sociaux grâce à des publications engageantes</p>
-                <span class="px-4 py-2 text-md text-white bg-light-blue opacity-95 rounded-2xl text-base mt-3 inline-block">Bientôt disponible <span class="w-3 h-3 bg-[orange] ml-2 rounded-full inline-block animate-pulse"></span></span>
+                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Constitution</span> et animation d'une <span class="font-semibold">communauté</span> sur les <span class="font-semibold">réseaux sociaux</span> grâce à des publications <span class="font-semibold">engageantes</span></p>
+                <span class="text-white px-4 py-2 text-md bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
             </div>
         </div>
     </div>
@@ -152,8 +156,8 @@
         </div>
     </div>
 </section> -->
-<footer class="text-white px-8 mt-12">
-    <div class="drop-shadow-xl xl:container lg:container md:w-full xl:w-10/12 lg:w-11/12 bg-[#2e5ee9] rounded-tr-xl rounded-tl-xl mx-auto md:py-12 md:px-16 md:pb-16 sm:pb-16 px-8 py-8">
+<footer class="text-white mt-12 xl:px-12 lg:px-12 md:px-12 sm:px-12 px-6 bg-dark-blue">
+    <div class="drop-shadow-xl xl:container lg:container md:container sm:w-full bg-light-blue rounded-tr-xl rounded-tl-xl mx-auto md:py-12 md:px-16 md:pb-16 sm:pb-16 px-8 py-8">
         <div class="lg:flex lg:justify-between">
             <div class="mb-6 md:mb-0">
                 <span class="lg:block md:flex md:justify-center flex justify-center md:-mt-3 sm:mt-4 mt-0">
@@ -186,7 +190,7 @@
                     <ul class="text-gray-600 space-y-2 dark:text-gray-400">
                         <li><a href="index.html" class="opacity-75 hover:opacity-100 hover:underline">Accueil</a></li>
                         <li><a href="services.html" class="hover:underline">Services</a></li>
-                        <li><a href="tarifs.html" class="opacity-75 hover:opacity-100 hover:underline">Tarifs</a></li>
+                        <li><a href="tarifs.html" class="opacity-75 hover:opacity-100 hover:underline">Offre Petites Structures</a></li>
                         <li><a href="realisations.html" class="opacity-75 hover:opacity-100 hover:underline">Réalisations</a></li>
                     </ul>
                 </div>
