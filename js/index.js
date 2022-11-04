@@ -1,5 +1,5 @@
-import './three.js';
-import './slider.js';
+import './index/three.js';
+import './index/slider.js';
 // Layout and menu
-import './layout.js';
+import './index/layout.js';
 import "@lottiefiles/lottie-player";

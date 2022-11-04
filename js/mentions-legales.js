@@ -12,7 +12,7 @@ const logo = document.getElementById('logo');
 // Logo back to home page animation
 logo.addEventListener("click", () => {
     document.location.href = 'index.html';
-})
+});
 
 // Burger menu animation
 burgerMenu.addEventListener("click", () => {
@@ -25,7 +25,7 @@ burgerMenu.addEventListener("click", () => {
         gsap.to(line1Menu, {rotate: 45, duration: 0.2, translateY: 5});
         gsap.to(line2Menu, {rotate: -45, duration: 0.2, translateY: -10, width: "100%"}, "<");
     }
-})
+});
 
 // Reset responsive menu on resize
 window.addEventListener("resize", () => {
@@ -37,4 +37,4 @@ window.addEventListener("resize", () => {
             gsap.to(line2Menu, {rotate: 0, duration: 0.2, translateY: 0, width: "58%"}, "<");
         }
     }
-})
+});
