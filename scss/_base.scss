@@ -28,6 +28,7 @@
 }
 
 .subscribe-button {
+  user-select: none;
   // for shine & gradient effects to work
   position: relative;
   overflow: hidden;
