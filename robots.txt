@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.mxs-web.fr/sitemap.xml
+Sitemap: http://www.mxs-web.fr/sitemap.xml
