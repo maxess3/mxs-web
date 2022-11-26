@@ -26,7 +26,7 @@ tl2.from(".gsap-rect-4", { opacity:0, scaleX: 0, scaleY: 0, stagger: 0.1 }, "<0.
 
 // Logo back to home page animation
 logo.addEventListener("click", () => {
-    document.location.href = 'index.html';
+    document.location.href = 'https://mxs-web.fr/';
 })
 
 // Burger menu animation

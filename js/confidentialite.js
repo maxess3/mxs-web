@@ -11,7 +11,7 @@ const logo = document.getElementById('logo');
 
 // Logo back to home page animation
 logo.addEventListener("click", () => {
-    document.location.href = 'index.html';
+    document.location.href = 'https://mxs-web.fr/';
 });
 
 // Burger menu animation
