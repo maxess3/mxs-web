@@ -57,50 +57,50 @@ window.addEventListener("resize", () => {
 
 // Scroll reveal
 ScrollReveal({ mobile: false });
-ScrollReveal().reveal('.service1');
-ScrollReveal().reveal('.service2', {
-    delay: 200
-});
-ScrollReveal().reveal('.service3', {
-    delay: 300
-});
-ScrollReveal().reveal('.service4', {
-    delay: 400
-});
-ScrollReveal().reveal('.activity-title', {
-    distance: '-10px'
-});
-ScrollReveal().reveal('.activity-text', {
-    distance: '-10px',
-    delay: 200
-});
-ScrollReveal().reveal('.splide', {
-    scale: 0.8,
-    delay: 200
-});
-ScrollReveal().reveal('.who-am-i-title', {
-    distance: '-10px'
-});
-ScrollReveal().reveal('.who-am-i-text', {
-    distance: '-10px',
-    delay: 200
-});
-ScrollReveal().reveal('.who-am-i-bloc', {
-    scale: 0.8,
-});
-ScrollReveal().reveal('.credits-title', {
-    distance: '-10px'
-});
-ScrollReveal().reveal('.credits-text', {
-    distance: '-10px',
-    delay: 200
-});
-ScrollReveal().reveal('.credits-bloc-1', {
-    scale: 0.8,
-    delay: 200
-});
-ScrollReveal().reveal('.credits-bloc-2', {
-    scale: 0.8,
-    delay: 350
-});
-ScrollReveal().reveal('.footer-page');
+// ScrollReveal().reveal('.service1');
+// ScrollReveal().reveal('.service2', {
+//     delay: 200
+// });
+// ScrollReveal().reveal('.service3', {
+//     delay: 300
+// });
+// ScrollReveal().reveal('.service4', {
+//     delay: 400
+// });
+// ScrollReveal().reveal('.activity-title', {
+//     distance: '-10px'
+// });
+// ScrollReveal().reveal('.activity-text', {
+//     distance: '-10px',
+//     delay: 200
+// });
+// ScrollReveal().reveal('.splide', {
+//     scale: 0.8,
+//     delay: 200
+// });
+// ScrollReveal().reveal('.who-am-i-title', {
+//     distance: '-10px'
+// });
+// ScrollReveal().reveal('.who-am-i-text', {
+//     distance: '-10px',
+//     delay: 200
+// });
+// ScrollReveal().reveal('.who-am-i-bloc', {
+//     scale: 0.8,
+// });
+// ScrollReveal().reveal('.credits-title', {
+//     distance: '-10px'
+// });
+// ScrollReveal().reveal('.credits-text', {
+//     distance: '-10px',
+//     delay: 200
+// });
+// ScrollReveal().reveal('.credits-bloc-1', {
+//     scale: 0.8,
+//     delay: 200
+// });
+// ScrollReveal().reveal('.credits-bloc-2', {
+//     scale: 0.8,
+//     delay: 350
+// });
+// ScrollReveal().reveal('.footer-page');
