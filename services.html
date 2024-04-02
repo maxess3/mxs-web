@@ -1,196 +1,615 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="L'agence digitale MXS-WEB vous accompagne dans plusieurs domaines d'expertise sur le web (Design UX/UI, Développement Front-End, Community Management, SEO, SEA)">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="L'agence digitale MXS-WEB vous accompagne dans plusieurs domaines d'expertise sur le web (Design UX/UI, Développement Front-End, Community Management, SEO, SEA)"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <title>Services | MXS-WEB</title>
     <link rel="stylesheet" href="scss/style.scss" />
-    <link href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/brands.min.css" />
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/solid.min.css" />
+    <link
+      href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/brands.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/solid.min.css"
+    />
     <script type="module" src="./js/services.js"></script>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P8CV5L7');
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P8CV5L7");
     </script>
     <!-- End Google Tag Manager -->
-</head>
-<body class="bg-dark-blue">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8CV5L7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div id="menu-mobile" class="w-full bg-light-blue h-screen top-0 z-40 absolute xl:hidden hidden text-white sm:px-12 px-6 xl:py-0 md:py-4 py-4">
-    <div class="container mx-auto flex h-full flex-col justify-between">
+  </head>
+  <body class="bg-[#f4f4f4]">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P8CV5L7"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div
+      id="menu-mobile"
+      class="w-full bg-light-blue h-screen top-0 z-40 absolute xl:hidden hidden text-white sm:px-12 px-6 xl:py-0 md:py-4 py-4"
+    >
+      <div class="container mx-auto flex h-full flex-col justify-between">
         <div class="lg:mt-32 sm:mt-28 mt-24">
-            <ul id="mobile-landscape-menu" class="lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-5 lg:text-xl md:text-xl sm:text-xl text-lg">
-                <li class="link-landscape"><a href="./" class="opacity-75 hover:opacity-100 transition-opacity">Accueil</a></li>
-                <li class="link-landscape"><a href="services">Services</a></li>
-                <li class="link-landscape"><a href="tarifs" class="opacity-75 hover:opacity-100 transition-opacity">Offre Petites Structures</a></li>
-                <li class="link-landscape"><a href="contact" class="opacity-75 hover:opacity-100 transition-opacity">Contact</a></li>
-            </ul>
+          <ul
+            id="mobile-landscape-menu"
+            class="lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-5 lg:text-xl md:text-xl sm:text-xl text-lg"
+          >
+            <li class="link-landscape">
+              <a
+                href="./"
+                class="opacity-75 hover:opacity-100 transition-opacity"
+                >Accueil</a
+              >
+            </li>
+            <li class="link-landscape"><a href="services">Services</a></li>
+            <li class="link-landscape">
+              <a
+                href="tarifs"
+                class="opacity-75 hover:opacity-100 transition-opacity"
+                >Offre Petites Structures</a
+              >
+            </li>
+            <li class="link-landscape">
+              <a
+                href="contact"
+                class="opacity-75 hover:opacity-100 transition-opacity"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
         <div id="social-mobile" class="container mb-32">
-            <div class="flex justify-center space-x-8">
-                <a href="https://www.linkedin.com/in/maxime-schellenberger/" target="_blank" class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                    <i class="p-4 fa-brands fa-linkedin-in text-xl"></i>
-                </a>
-                <a href="https://dribbble.com/maxsc-dev" target="_blank" class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                    <i class="p-4 fa-brands fa-dribbble text-xl"></i>
-                </a>
-            </div>
+          <div class="flex justify-center space-x-8">
+            <a
+              href="https://www.linkedin.com/in/maxime-schellenberger/"
+              target="_blank"
+              class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+              <i class="p-4 fa-brands fa-linkedin-in text-xl"></i>
+            </a>
+            <a
+              href="https://dribbble.com/maxsc-dev"
+              target="_blank"
+              class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+              <i class="p-4 fa-brands fa-dribbble text-xl"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<header class="w-full text-white relative overflow-hidden bg-light-blue">
-    <!---- NAV CTN ---->
-    <div class="sm:px-12 px-6 xl:py-0 md:py-4 py-4">
+    <header class="w-full text-white relative overflow-hidden bg-light-blue">
+      <!---- NAV CTN ---->
+      <div class="sm:px-12 px-6 xl:py-0 md:py-4 py-4">
         <nav class="block container mx-auto relative">
-            <div class="absolute xl:block hidden -bottom-11 right-0 rounded-xl items-center italic"><span class="opacity-50 hover:opacity-75 transition ease duration-200 cursor-default">Actuellement sur Toulouse</span><span class="w-3 h-3 bg-[#16CD6A] ml-3 rounded-full xl:inline-block hidden animate-pulse"></span></div>
-            <div class="nav-gsap z-40 py-2 items-center flex justify-between relative">
-                <div id="burger-menu" class="xl:hidden cursor-pointer w-10 h-8 flex flex-col justify-around order-2 relative z-40">
-                    <span id="line-1-menu" class="inline-block w-full h-[3px] bg-[white] rounded-sm"></span>
-                    <span id="line-2-menu" class="inline-block w-7/12 h-[3px] bg-[white] rounded-sm"></span>
-                </div>
-                <span class="flex justify-center relative z-40 cursor-pointer">
-                    <img class="xl:w-[240px] lg:w-[200px] w-[180px]" src="./assets/png/logo.png" width="240" height="100" alt="Logo de l'agence digitale mxs-web" id="logo">
-                </span>
-                <!-- NAV DESKTOP -->
-                <ul class="hidden xl:flex items-center justify-center w-full text-lg font-normal">
-                    <li class="mx-10 opacity-75"><a href="./">Accueil</a></li>
-                    <li class="mx-10"><a href="services">Services</a></li>
-                    <li class="mx-10 opacity-75"><a href="tarifs">Offre Petites Structures</a></li>
-                </ul>
-                <!-- NAV DESKTOP -->
-                <span class="xl:flex hidden py-5">
-                    <a href="./contact" class="subscribe-button btn-1 rounded-2xl flex items-center shadow-lg  px-8 py-4 text-lg cursor-pointer">Contact</a>
-                </span>
+          <div
+            class="absolute xl:block hidden -bottom-11 right-0 rounded-xl items-center italic"
+          >
+            <span
+              class="opacity-50 hover:opacity-75 transition ease duration-200 cursor-default"
+              >Actuellement sur Toulouse</span
+            ><span
+              class="w-3 h-3 bg-[#16CD6A] ml-3 rounded-full xl:inline-block hidden animate-pulse"
+            ></span>
+          </div>
+          <div
+            class="nav-gsap z-40 py-2 items-center flex justify-between relative"
+          >
+            <div
+              id="burger-menu"
+              class="xl:hidden cursor-pointer w-10 h-8 flex flex-col justify-around order-2 relative z-40"
+            >
+              <span
+                id="line-1-menu"
+                class="inline-block w-full h-[3px] bg-[white] rounded-sm"
+              ></span>
+              <span
+                id="line-2-menu"
+                class="inline-block w-7/12 h-[3px] bg-[white] rounded-sm"
+              ></span>
             </div>
+            <span class="flex justify-center relative z-40 cursor-pointer">
+              <img
+                class="xl:w-[240px] lg:w-[200px] w-[180px]"
+                src="./assets/png/logo.png"
+                width="240"
+                height="100"
+                alt="Logo de l'agence digitale mxs-web"
+                id="logo"
+              />
+            </span>
+            <!-- NAV DESKTOP -->
+            <ul
+              class="hidden xl:flex items-center justify-center w-full text-lg font-normal"
+            >
+              <li class="mx-10 opacity-75"><a href="./">Accueil</a></li>
+              <li class="mx-10"><a href="services">Services</a></li>
+              <li class="mx-10 opacity-75">
+                <a href="tarifs">Offre Petites Structures</a>
+              </li>
+            </ul>
+            <!-- NAV DESKTOP -->
+            <span class="xl:flex hidden py-5">
+              <a
+                href="./contact"
+                class="subscribe-button btn-1 rounded-2xl flex items-center shadow-lg px-8 py-4 text-lg cursor-pointer"
+                >Contact</a
+              >
+            </span>
+          </div>
         </nav>
-    </div>
-</header>
-<section class="w-full bg-dark-blue text-white">
-    <div class="sm:px-12 px-6 xl:py-0 md:py-4 py-4">
-        <div class="container mx-auto flex xl:flex-row lf:flex-row md:flex-col sm:flex-col flex-col justify-between items-center">
-            <div class="xl:mt-10 lg:mt-4 mt-2 flex flex-col xl:w-8/12 md:w-full">
-                <i class="mb-2 xl:text-xl lg:text-xl text-lg font-sans font-bold">Services</i>
-                <h1 style="line-height: 1.6em;" class="font-heading xl:text-4xl lg:text-4xl md:text-4xl sm:text-3xl text-2xl">De nombreux <span class="font-bold">services</span> pour <br>vous <span class="font-bold">accompagner</span></h1>
-                <h2 style="line-height: 1.7em;" class="opacity-90 mt-4 xl:text-xl lg:text-xl md:text-xl sm:text-lg text-base">La création d'un site internet devient <span class="font-semibold">indispensable</span> pour toute activité. Aujourd'hui, avec les nouvelles <span class="font-semibold">exigences</span> des moteurs de recherche, elle <span class="font-semibold">nécessite</span> de <span class="font-semibold">nombreuses compétences</span>. Se faire <span class="font-semibold">accompagner</span> par une <span class="font-semibold">agence web</span> reste le moyen le plus <span class="font-semibold">sûr</span> pour mener à bien votre projet digital en toute <span class="font-semibold">sérénité</span>.</h2>
-            </div>
-            <div class="xl:static xl:w-3/12 xl:mt-0 lg:mt-8 mt-6 mb-2">
-                <img width="200" height="100" src="./assets/svg/service-undraw.svg" alt="Illustration des services proposés" class="relative xl:w-[21rem] xl:top-24 xl:right-4 md:right-0 md:top-0 md:w-72 sm:w-60 w-56">
-            </div>
+      </div>
+    </header>
+    <section class="w-full bg-[#f4f4f4] text-[#20204e]">
+      <div class="sm:px-12 px-6 xl:py-0 md:py-4 py-4">
+        <div
+          class="container mx-auto flex xl:flex-row lf:flex-row md:flex-col sm:flex-col flex-col justify-between items-center"
+        >
+          <div class="xl:mt-10 lg:mt-4 mt-2 flex flex-col xl:w-8/12 md:w-full">
+            <i class="mb-2 xl:text-xl lg:text-xl text-lg font-sans font-bold"
+              >Services</i
+            >
+            <h1
+              style="line-height: 1.6em"
+              class="font-heading xl:text-4xl lg:text-4xl md:text-4xl sm:text-3xl text-2xl text-[#20204e]"
+            >
+              De nombreux <span class="font-bold">services</span> pour
+              <br />vous <span class="font-bold">accompagner</span>
+            </h1>
+            <h2
+              style="line-height: 1.7em"
+              class="opacity-90 mt-4 xl:text-lg sm:text-lg text-base"
+            >
+              La création d'un site internet devient
+              <span class="font-semibold">indispensable</span> pour toute
+              activité. Aujourd'hui, avec les nouvelles
+              <span class="font-semibold">exigences</span> des moteurs de
+              recherche, elle <span class="font-semibold">nécessite</span> de
+              <span class="font-semibold">nombreuses compétences</span>. Se
+              faire <span class="font-semibold">accompagner</span> par une
+              <span class="font-semibold">agence web</span> reste le moyen le
+              plus <span class="font-semibold">sûr</span> pour mener à bien
+              votre projet digital en toute
+              <span class="font-semibold">sérénité</span>.
+            </h2>
+          </div>
+          <div class="xl:static xl:w-3/12 xl:-mt-4 lg:mt-8 mt-10 mb-0">
+            <img
+              width="200"
+              height="100"
+              src="./assets/svg/service-undraw.svg"
+              alt="Illustration des services proposés"
+              class="relative xl:w-[21rem] xl:top-24 xl:right-4 md:right-0 md:top-0 md:w-72 sm:w-60 w-56"
+            />
+          </div>
         </div>
-    </div>
-    <div class="sm:px-12 px-6 xl:mt-8 mt-2">
-        <div class="container mx-auto flex sm:flex-row flex-col justify-center sm:mb-6">
-            <button id="filter-all" class="px-6 py-2 text-md text-white bg-light-blue rounded-2xl text-base select-none">Voir tous les services</button>
-            <button id="filter-available" class="sm:ml-4 ml-0 sm:mt-0 mt-6 px-6 py-2 text-md text-white bg-[#17348a] rounded-2xl text-base opacity-60 select-none">Voir les services populaires</button>
+      </div>
+      <div class="sm:px-12 px-6 xl:mt-8 mt-2">
+        <div
+          class="container mx-auto flex sm:flex-row flex-col justify-center sm:mb-6"
+        ></div>
+        <div
+          id="filter-container"
+          class="md:mt-10 sm:mt-4 mt-8 drop-shadow-xl container grid xl:grid-cols-3 lg:grid-cols-2 gap-6 justify-center mx-auto"
+        >
+          <div
+            style="
+              background-color: #fff;
+              background-image: linear-gradient(
+                to bottom right,
+                transparent calc(65%),
+                rgb(186, 206, 232) calc(65% + 1px)
+              );
+              background-size: 30% 65%;
+              background-position: right bottom -1px;
+              background-repeat: no-repeat;
+            "
+            class="rounded-xl sm:px-8 sm:py-6 p-6 service service-available"
+          >
+            <div class="flex justify-between items-center">
+              <h3
+                class="text-[#20204e] md:text-xl sm:text-xl text-lg font-bold font-heading"
+              >
+                Design UI/UX
+              </h3>
+              <span
+                class="inline-flex items-center justify-center w-12 rounded-xl h-12 bg-[#efefef]"
+                ><i
+                  class="fa-solid text-[#5a5a5a] fa-table-columns sm:text-2xl text-xl"
+                ></i
+              ></span>
+            </div>
+            <p
+              class="text-[#20204e] xl:text-lg lg:text-lg md:text-lg text-base opacity-90 mt-2"
+              style="line-height: 1.9em"
+            >
+              <span class="font-semibold">Conception</span> de
+              <span class="font-semibold">maquettes</span> visant à fournir une
+              expérience utilisateur qui
+              <span class="font-semibold">répondra</span> aux besoins de votre
+              <span class="font-semibold">audience</span>
+            </p>
+            <span
+              class="px-4 py-2 text-md text-[#5a5a5a] bg-[#f0f0f0] opacity-95 rounded-2xl text-base mt-3 inline-block"
+              >Disponible
+              <span
+                class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"
+              ></span
+            ></span>
+          </div>
+          <div
+            style="
+              background-color: #fff;
+              background-image: linear-gradient(
+                to bottom right,
+                transparent calc(65%),
+                rgb(186, 221, 232) calc(65% + 1px)
+              );
+              background-size: 30% 65%;
+              background-position: right bottom -1px;
+              background-repeat: no-repeat;
+            "
+            class="rounded-xl sm:px-8 sm:py-6 p-6 service service-available"
+          >
+            <div class="flex justify-between items-center">
+              <h3
+                class="text-[#20204e] md:text-xl sm:text-xl text-lg font-bold font-heading"
+              >
+                Dev front-end
+              </h3>
+              <span
+                class="inline-flex items-center justify-center w-12 rounded-xl h-12 bg-[#efefef]"
+                ><i
+                  class="fa-solid fa-code text-[#5a5a5a] sm:text-2xl text-xl"
+                ></i
+              ></span>
+            </div>
+            <p
+              class="text-[#20204e] xl:text-lg lg:text-lg md:text-lg text-base opacity-90 mt-2"
+              style="line-height: 1.9em"
+            >
+              <span class="font-semibold">Développement</span> de
+              <span class="font-semibold">maquettes</span> responsive au pixel
+              près et <span class="font-semibold">optimisation</span> des
+              <span class="font-semibold">performances</span> des interfaces
+              conçues
+            </p>
+            <span
+              class="px-4 py-2 text-md text-[#5a5a5a] bg-[#f0f0f0] opacity-95 rounded-2xl text-base mt-3 inline-block"
+              >Disponible
+              <span
+                class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"
+              ></span
+            ></span>
+          </div>
+          <div
+            style="
+              background-color: #fff;
+              background-image: linear-gradient(
+                to bottom right,
+                transparent calc(65%),
+                rgb(186, 232, 208) calc(65% + 1px)
+              );
+              background-size: 30% 65%;
+              background-position: right bottom -1px;
+              background-repeat: no-repeat;
+            "
+            class="rounded-xl sm:px-8 sm:py-6 p-6 service"
+          >
+            <div class="flex justify-between items-center">
+              <h3
+                class="md:text-xl sm:text-xl text-lg text-[#20204e] font-bold font-heading"
+              >
+                Optimisations SEO
+              </h3>
+              <span
+                class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-[#efefef]"
+                ><i
+                  class="text-[#5a5a5a] fa-brands fa-google sm:text-2xl text-xl"
+                ></i
+              ></span>
+            </div>
+            <p
+              class="xl:text-lg lg:text-lg md:text-lg text-base text-[#20204e] opacity-90 mt-2"
+              style="line-height: 1.9em"
+            >
+              <span class="font-semibold">Amélioration</span> de votre
+              positionnement sur les pages de résultats des moteurs de recherche
+              grâce à des
+              <span class="font-semibold">stratégies</span> spécifiques
+            </p>
+            <span
+              class="text-[#5a5a5a] px-4 py-2 text-md bg-[#efefef] opacity-95 rounded-2xl text-base mt-3 inline-block"
+              >Disponible
+              <span
+                class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"
+              ></span
+            ></span>
+          </div>
+          <div
+            style="
+              background-color: #fff;
+              background-image: linear-gradient(
+                to bottom right,
+                transparent calc(65%),
+                rgb(208, 232, 186) calc(65% + 1px)
+              );
+              background-size: 30% 65%;
+              background-position: right bottom -1px;
+              background-repeat: no-repeat;
+            "
+            class="rounded-xl sm:px-8 sm:py-6 p-6 service"
+          >
+            <div class="flex justify-between items-center">
+              <h3
+                class="md:text-xl sm:text-xl text-lg text-[#20204e] font-bold font-heading"
+              >
+                Campagnes SEA
+              </h3>
+              <span
+                class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-[#efefef]"
+                ><i
+                  class="text-[#5a5a5a] fa-solid fa-chart-line sm:text-2xl text-xl"
+                ></i
+              ></span>
+            </div>
+            <p
+              class="xl:text-lg lg:text-lg md:text-lg text-base text-[#20204e] opacity-90 mt-2"
+              style="line-height: 1.9em"
+            >
+              <span class="font-semibold">Création</span> de
+              <span class="font-semibold">campagnes</span> sponsorisées offrant
+              une <span class="font-semibold">visibilité</span> immédiate de
+              votre activité en ciblant des prospects
+              <span class="font-semibold">qualifiés</span> (leads)
+            </p>
+            <span
+              class="text-[#5a5a5a] px-4 py-2 text-md bg-[#efefef] opacity-95 rounded-2xl text-base mt-3 inline-block"
+              >Disponible
+              <span
+                class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"
+              ></span
+            ></span>
+          </div>
+          <div
+            style="
+              background-color: #fff;
+              background-image: linear-gradient(
+                to bottom right,
+                transparent calc(65%),
+                rgb(227, 232, 186) calc(65% + 1px)
+              );
+              background-size: 30% 65%;
+              background-position: right bottom -1px;
+              background-repeat: no-repeat;
+            "
+            class="rounded-xl sm:px-8 sm:py-6 p-6 service"
+          >
+            <div class="flex justify-between items-center">
+              <h3
+                class="md:text-xl sm:text-xl text-lg text-[#20204e] font-bold font-heading"
+              >
+                Identité visuelle
+              </h3>
+              <span
+                class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-[#efefef]"
+                ><i
+                  class="text-[#5a5a5a] fa-solid fa-pen-nib sm:text-2xl text-xl"
+                ></i
+              ></span>
+            </div>
+            <p
+              class="xl:text-lg lg:text-lg md:text-lg text-base text-[#20204e] opacity-90 mt-2"
+              style="line-height: 1.9em"
+            >
+              <span class="font-semibold">Création</span> de
+              <span class="font-semibold">chartes graphiques</span>, de
+              <span class="font-semibold">logos</span> et divers
+              <span class="font-semibold">supports de communication</span>
+              utilisables directement sur les réseaux sociaux
+            </p>
+            <span
+              class="text-[#5a5a5a] px-4 py-2 text-md bg-[#efefef] opacity-95 rounded-2xl text-base mt-3 inline-block"
+              >Disponible
+              <span
+                class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"
+              ></span
+            ></span>
+          </div>
+          <div
+            style="
+              background-color: #fff;
+              background-image: linear-gradient(
+                to bottom right,
+                transparent calc(65%),
+                rgb(232, 208, 186) calc(65% + 1px)
+              );
+              background-size: 30% 65%;
+              background-position: right bottom -1px;
+              background-repeat: no-repeat;
+            "
+            class="rounded-xl sm:px-8 sm:py-6 p-6 service"
+          >
+            <div class="flex justify-between items-center">
+              <h3
+                class="md:text-xl sm:text-xl text-lg text-[#20204e] font-bold font-heading"
+              >
+                Community management
+              </h3>
+              <span
+                class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-[#efefef]"
+                ><i
+                  class="text-[#5a5a5a] fa-brands fa-x-twitter sm:text-2xl text-xl"
+                ></i
+              ></span>
+            </div>
+            <p
+              class="xl:text-lg lg:text-lg md:text-lg text-base text-[#20204e] opacity-90 mt-2"
+              style="line-height: 1.9em"
+            >
+              <span class="font-semibold">Constitution</span> et animation d'une
+              <span class="font-semibold">communauté</span> sur les
+              <span class="font-semibold">réseaux sociaux</span> grâce à des
+              publications <span class="font-semibold">engageantes</span>
+            </p>
+            <span
+              class="text-[#5a5a5a] px-4 py-2 text-md bg-[#efefef] opacity-95 rounded-2xl text-base mt-3 inline-block"
+              >Disponible
+              <span
+                class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"
+              ></span
+            ></span>
+          </div>
         </div>
-        <div id="filter-container" class="md:mt-10 sm:mt-4 mt-8 drop-shadow-xl container grid xl:grid-cols-3 lg:grid-cols-2 gap-6 justify-center mx-auto">
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2c5ef3] service service-available">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-white md:text-xl sm:text-xl text-lg font-bold font-heading">Design UI/UX</h3>
-                    <span class="inline-flex items-center justify-center w-12 rounded-xl h-12 bg-[#0937c3]"><i class="fa-solid fa-table-columns sm:text-2xl text-xl"></i></span>
-                </div>
-                <p class="text-white xl:text-lg lg:text-lg md:text-lg text-base opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Conception</span> de <span class="font-semibold">maquettes</span> visant à fournir une expérience utilisateur qui <span class="font-semibold">répondra</span> aux besoins de votre <span class="font-semibold">audience</span></p>
-                <span class="px-4 py-2 text-md text-white bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
-            </div>
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2c5ef3] service service-available">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-white md:text-xl sm:text-xl text-lg font-bold font-heading">Dev front-end</h3>
-                    <span class="inline-flex items-center justify-center w-12 rounded-xl h-12 bg-[#0937c3]"><i class="fa-solid fa-code sm:text-2xl text-xl"></i></span>
-                </div>
-                <p class="text-white xl:text-lg lg:text-lg md:text-lg text-base opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Développement</span> de <span class="font-semibold">maquettes</span> responsive au pixel près et <span class="font-semibold">optimisation</span> des <span class="font-semibold">performances</span> des interfaces conçues</p>
-                <span class="text-white px-4 py-2 text-md bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
-            </div>
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2c5ef3] service">
-                <div class="flex justify-between items-center">
-                    <h3 class="md:text-xl sm:text-xl text-lg text-white font-bold font-heading">Optimisations SEO</h3>
-                    <span class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-dark-blue"><i class="fa-brands fa-google sm:text-2xl text-xl"></i></span>
-                </div>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Amélioration</span> de votre positionnement sur les pages de résultats des moteurs de recherche grâce à des <span class="font-semibold">stratégies</span> spécifiques</p>
-                <span class="text-white px-4 py-2 text-md bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
-            </div>
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2c5ef3] service">
-                <div class="flex justify-between items-center">
-                    <h3 class="md:text-xl sm:text-xl text-lg text-white font-bold font-heading">Campagnes SEA</h3>
-                    <span class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-dark-blue"><i class="fa-solid fa-chart-line sm:text-2xl text-xl"></i></span>
-                </div>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Création</span> de <span class="font-semibold">campagnes</span> sponsorisées offrant une <span class="font-semibold">visibilité</span> immédiate de votre activité en ciblant des prospects <span class="font-semibold">qualifiés</span> (leads)</p>
-                <span class="text-white px-4 py-2 text-md bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
-            </div>
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2c5ef3] service">
-                <div class="flex justify-between items-center">
-                    <h3 class="md:text-xl sm:text-xl text-lg text-white font-bold font-heading">Identité visuelle</h3>
-                    <span class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-dark-blue"><i class="fa-solid fa-pen-nib sm:text-2xl text-xl"></i></span>
-                </div>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Création</span> de <span class="font-semibold">chartes graphiques</span>, de <span class="font-semibold">logos</span> et divers <span class="font-semibold">supports de communication</span> utilisables directement sur les réseaux sociaux</p>
-                <span class="text-white px-4 py-2 text-md bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
-            </div>
-            <div class="rounded-xl sm:px-8 sm:py-6 p-6 bg-[#2c5ef3] service">
-                <div class="flex justify-between items-center">
-                    <h3 class="md:text-xl sm:text-xl text-lg text-white font-bold font-heading">Community management</h3>
-                    <span class="inline-flex justify-center items-center w-12 rounded-xl h-12 bg-dark-blue"><i class="fa-brands fa-twitter sm:text-2xl text-xl"></i></span>
-                </div>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-95 mt-2" style="line-height: 1.9em;"><span class="font-semibold">Constitution</span> et animation d'une <span class="font-semibold">communauté</span> sur les <span class="font-semibold">réseaux sociaux</span> grâce à des publications <span class="font-semibold">engageantes</span></p>
-                <span class="text-white px-4 py-2 text-md bg-[#0937c3] opacity-95 rounded-2xl text-base mt-3 inline-block">Disponible <span class="w-3 h-3 bg-[#16CD6A] ml-2 rounded-full inline-block animate-pulse"></span></span>
-            </div>
-        </div>
-    </div>
-</section>
-<footer class="text-white mt-12 xl:px-12 lg:px-12 md:px-12 sm:px-12 px-6 bg-dark-blue">
-    <div class="drop-shadow-xl xl:container lg:container md:container sm:w-full bg-light-blue rounded-tr-xl rounded-tl-xl mx-auto md:py-12 md:px-16 md:pb-16 sm:pb-16 px-8 py-8">
+      </div>
+    </section>
+    <footer
+      class="text-white mt-12 xl:px-12 lg:px-12 md:px-12 sm:px-12 px-6 bg-[#f4f4f4]"
+    >
+      <div
+        class="drop-shadow-xl xl:container lg:container md:container sm:w-full bg-light-blue rounded-tr-xl rounded-tl-xl mx-auto md:py-12 md:px-16 md:pb-16 sm:pb-16 px-8 py-8"
+      >
         <div class="lg:flex lg:justify-between">
-            <div class="mb-6 md:mb-0">
-                <span class="lg:block md:flex md:justify-center flex justify-center md:-mt-3 sm:mt-4 mt-0">
-                    <img class="w-[180px]" src="./assets/png/logo.png" alt="Logo de l'agence digitale mxs-web" width="180" height="100">
-                </span>
-                <div class="sm:flex sm:items-center sm:justify-center rounded-lg mt-6">
-                    <div class="flex mt-4 space-x-5 sm:justify-center justify-center sm:mt-0">
-                        <a aria-label="Linkedin" href="https://www.linkedin.com/in/maxime-schellenberger/" target="_blank" class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                            <i class="p-3 fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a aria-label="Dribbble" href="https://dribbble.com/maxsc-dev" target="_blank" class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                            <i class="p-3 fa-brands fa-dribbble"></i>
-                        </a>
-                    </div>
-                </div>
+          <div class="mb-6 md:mb-0">
+            <span
+              class="lg:block md:flex md:justify-center flex justify-center md:-mt-3 sm:mt-4 mt-0"
+            >
+              <img
+                class="w-[180px]"
+                src="./assets/png/logo.png"
+                alt="Logo de l'agence digitale mxs-web"
+                width="180"
+                height="100"
+              />
+            </span>
+            <div
+              class="sm:flex sm:items-center sm:justify-center rounded-lg mt-6"
+            >
+              <div
+                class="flex mt-4 space-x-5 sm:justify-center justify-center sm:mt-0"
+              >
+                <a
+                  aria-label="Linkedin"
+                  href="https://www.linkedin.com/in/maxime-schellenberger/"
+                  target="_blank"
+                  class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                >
+                  <i class="p-3 fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  aria-label="Dribbble"
+                  href="https://dribbble.com/maxsc-dev"
+                  target="_blank"
+                  class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                >
+                  <i class="p-3 fa-brands fa-dribbble"></i>
+                </a>
+              </div>
             </div>
-            <div class="lg:grid lg:grid-cols-2 lg:mt-0 md:mt-8 mt-8 md:flex md:justify-around sm:flex sm:justify-around">
-                <div class="">
-                    <h2 class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white">Navigation</h2>
-                    <ul class="text-gray-600 space-y-2 dark:text-gray-400">
-                        <li><a href="./" class="opacity-75 hover:opacity-100 hover:underline">Accueil</a></li>
-                        <li><a href="services" class="hover:underline">Services</a></li>
-                        <li><a href="tarifs" class="opacity-75 hover:opacity-100 hover:underline">Offre Petites Structures</a></li>
-                        <li><a href="contact" class="opacity-75 hover:opacity-100 hover:underline">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="lg:ml-8 md:ml-0 sm:ml-0 sm:mt-0 ml-0 mt-6">
-                    <h2 class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white">Légal</h2>
-                    <ul class="text-gray-600 dark:text-gray-400 space-y-2">
-                        <li>
-                            <a href="./mentions-legales" class="opacity-75 hover:underline hover:opacity-100">Mentions légales</a>
-                        </li>
-                        <li>
-                            <a href="./confidentialite" class="opacity-75 hover:underline hover:opacity-100">Politique de confidentialité</a>
-                        </li>
-                    </ul>
-                </div>
+          </div>
+          <div
+            class="lg:grid lg:grid-cols-2 lg:mt-0 md:mt-8 mt-8 md:flex md:justify-around sm:flex sm:justify-around"
+          >
+            <div class="">
+              <h2
+                class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white"
+              >
+                Navigation
+              </h2>
+              <ul class="text-gray-600 space-y-2 dark:text-gray-400">
+                <li>
+                  <a
+                    href="./"
+                    class="opacity-75 hover:opacity-100 hover:underline"
+                    >Accueil</a
+                  >
+                </li>
+                <li><a href="services" class="hover:underline">Services</a></li>
+                <li>
+                  <a
+                    href="tarifs"
+                    class="opacity-75 hover:opacity-100 hover:underline"
+                    >Offre Petites Structures</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact"
+                    class="opacity-75 hover:opacity-100 hover:underline"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
             </div>
+            <div class="lg:ml-8 md:ml-0 sm:ml-0 sm:mt-0 ml-0 mt-6">
+              <h2
+                class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white"
+              >
+                Légal
+              </h2>
+              <ul class="text-gray-600 dark:text-gray-400 space-y-2">
+                <li>
+                  <a
+                    href="./mentions-legales"
+                    class="opacity-75 hover:underline hover:opacity-100"
+                    >Mentions légales</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./confidentialite"
+                    class="opacity-75 hover:underline hover:opacity-100"
+                    >Politique de confidentialité</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,386 +1,996 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="L'agence digitale MXS-WEB vous accompagne en toute sécurité dans votre transformation digitale. Parlez-nous dès maintenant de votre projet.">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="L'agence digitale MXS-WEB vous accompagne en toute sécurité dans votre transformation digitale. Parlez-nous dès maintenant de votre projet."
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <title>MXS-WEB | Vous accompagner dans votre projet digital</title>
     <link rel="stylesheet" href="scss/style.scss" />
-    <link href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/brands.min.css" />
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/solid.min.css" />
+    <link
+      href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/brands.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/solid.min.css"
+    />
     <script type="module" src="./js/index.js"></script>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P8CV5L7');
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P8CV5L7");
     </script>
     <!-- End Google Tag Manager -->
-</head>
-<body class="bg-light-blue">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8CV5L7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div id="menu-mobile" class="w-full bg-light-blue h-screen top-0 z-40 absolute xl:hidden hidden text-white sm:px-12 px-6 xl:py-0 md:py-4 py-4">
-    <div class="container mx-auto flex h-full flex-col justify-between">
+  </head>
+  <body class="bg-light-blue">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P8CV5L7"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div
+      id="menu-mobile"
+      class="w-full bg-light-blue h-screen top-0 z-40 absolute xl:hidden hidden text-white sm:px-12 px-6 xl:py-0 md:py-4 py-4"
+    >
+      <div class="container mx-auto flex h-full flex-col justify-between">
         <div class="lg:mt-32 sm:mt-28 mt-24">
-            <ul id="mobile-landscape-menu" class="lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-5 lg:text-xl md:text-xl sm:text-xl text-lg">
-                <li class="link-landscape"><a href="./">Accueil</a></li>
-                <li class="link-landscape opacity-75"><a href="services" class="opacity-75 hover:opacity-100 transition-opacity">Services</a></li>
-                <li class="link-landscape opacity-75"><a href="tarifs" class="opacity-75 hover:opacity-100 transition-opacity">Offre Petites Structures</a></li>
-                <li class="link-landscape opacity-75"><a href="contact" class="opacity-75 hover:opacity-100 transition-opacity">Contact</a></li>
-            </ul>
+          <ul
+            id="mobile-landscape-menu"
+            class="lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-5 lg:text-xl md:text-xl sm:text-xl text-lg"
+          >
+            <li class="link-landscape"><a href="./">Accueil</a></li>
+            <li class="link-landscape opacity-75">
+              <a
+                href="services"
+                class="opacity-75 hover:opacity-100 transition-opacity"
+                >Services</a
+              >
+            </li>
+            <li class="link-landscape opacity-75">
+              <a
+                href="tarifs"
+                class="opacity-75 hover:opacity-100 transition-opacity"
+                >Offre Petites Structures</a
+              >
+            </li>
+            <li class="link-landscape opacity-75">
+              <a
+                href="contact"
+                class="opacity-75 hover:opacity-100 transition-opacity"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
         <div id="social-mobile" class="container mb-32">
-            <div class="flex justify-center space-x-8">
-                <a href="https://www.linkedin.com/in/maxime-schellenberger/" target="_blank" class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                    <i class="p-4 fa-brands fa-linkedin-in text-xl"></i>
-                </a>
-                <a href="https://dribbble.com/maxsc-dev" target="_blank" class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                    <i class="p-4 fa-brands fa-dribbble text-xl"></i>
-                </a>
-            </div>
+          <div class="flex justify-center space-x-8">
+            <a
+              href="https://www.linkedin.com/in/maxime-schellenberger/"
+              target="_blank"
+              class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+              <i class="p-4 fa-brands fa-linkedin-in text-xl"></i>
+            </a>
+            <a
+              href="https://dribbble.com/maxsc-dev"
+              target="_blank"
+              class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+              <i class="p-4 fa-brands fa-dribbble text-xl"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<header class="w-full text-white bg-cover bg-lb relative overflow-hidden">
-    <!---- NAV CTN ---->
-    <div class="sm:px-12 px-6 xl:py-0 md:py-4 py-4">
+    <header class="w-full text-white bg-cover bg-lb relative overflow-hidden">
+      <!---- NAV CTN ---->
+      <div class="sm:px-12 px-6 xl:py-0 md:py-4 py-4">
         <nav class="block container mx-auto relative">
-            <div class="absolute xl:block hidden -bottom-11 right-0 rounded-xl items-center italic"><span class="opacity-50 hover:opacity-75 transition ease duration-200 cursor-default">Actuellement sur Toulouse</span><span class="w-3 h-3 bg-[#16CD6A] ml-3 rounded-full xl:inline-block hidden animate-pulse"></span></div>
-            <div class="nav-gsap z-40 py-2 items-center flex justify-between before:block before:absolute xl:before:-bottom-0 before:-bottom-4 before:w-full before:bg-white before:h-0.5 before:rounded-full before:content-[''] before:opacity-20 relative">
-                <div id="burger-menu" class="xl:hidden cursor-pointer w-10 h-8 flex flex-col justify-around order-2 relative z-40">
-                    <span id="line-1-menu" class="inline-block w-full h-[3px] bg-[white] rounded-sm"></span>
-                    <span id="line-2-menu" class="inline-block w-7/12 h-[3px] bg-[white] rounded-sm"></span>
-                </div>
-                <span class="flex justify-center relative z-40 cursor-pointer">
-                    <img class="xl:w-[240px] lg:w-[200px] w-[180px]" src="./assets/png/logo.png" width="240" height="100" alt="Logo de l'agence digitale mxs-web" id="logo">
-                </span>
-                <!-- NAV DESKTOP -->
-                <ul class="hidden xl:flex items-center justify-center w-full text-lg font-normal">
-                    <li class="mx-10"><a href="./">Accueil</a></li>
-                    <li class="mx-10 opacity-75"><a href="services">Services</a></li>
-                    <li class="mx-10 opacity-75"><a href="tarifs">Offre Petites Structures</a></li>
-                </ul>
-                <!-- NAV DESKTOP -->
-                <span class="xl:flex hidden py-5">
-                    <a href="./contact" class="subscribe-button btn-1 rounded-2xl flex items-center shadow-lg px-8 py-4 text-lg">Contact</a>
-                </span>
+          <div
+            class="absolute xl:block hidden -bottom-11 right-0 rounded-xl items-center italic"
+          >
+            <span
+              class="opacity-50 hover:opacity-75 transition ease duration-200 cursor-default"
+              >Actuellement sur Toulouse</span
+            ><span
+              class="w-3 h-3 bg-[#16CD6A] ml-3 rounded-full xl:inline-block hidden animate-pulse"
+            ></span>
+          </div>
+          <div
+            class="nav-gsap z-40 py-2 items-center flex justify-between before:block before:absolute xl:before:-bottom-0 before:-bottom-4 before:w-full before:bg-white before:h-0.5 before:rounded-full before:content-[''] before:opacity-20 relative"
+          >
+            <div
+              id="burger-menu"
+              class="xl:hidden cursor-pointer w-10 h-8 flex flex-col justify-around order-2 relative z-40"
+            >
+              <span
+                id="line-1-menu"
+                class="inline-block w-full h-[3px] bg-[white] rounded-sm"
+              ></span>
+              <span
+                id="line-2-menu"
+                class="inline-block w-7/12 h-[3px] bg-[white] rounded-sm"
+              ></span>
             </div>
+            <span class="flex justify-center relative z-40 cursor-pointer">
+              <img
+                class="xl:w-[240px] lg:w-[200px] w-[180px]"
+                src="./assets/png/logo.png"
+                width="240"
+                height="100"
+                alt="Logo de l'agence digitale mxs-web"
+                id="logo"
+              />
+            </span>
+            <!-- NAV DESKTOP -->
+            <ul
+              class="hidden xl:flex items-center justify-center w-full text-lg font-normal"
+            >
+              <li class="mx-10"><a href="./">Accueil</a></li>
+              <li class="mx-10 opacity-75"><a href="services">Services</a></li>
+              <li class="mx-10 opacity-75">
+                <a href="tarifs">Offre Petites Structures</a>
+              </li>
+            </ul>
+            <!-- NAV DESKTOP -->
+            <span class="xl:flex hidden py-5">
+              <a
+                href="./contact"
+                class="subscribe-button btn-1 rounded-2xl flex items-center shadow-lg px-8 py-4 text-lg"
+                >Contact</a
+              >
+            </span>
+          </div>
         </nav>
         <!---- HERO SECTION ---->
-        <div class="sm:pb-72 pb-60 container mx-auto font-heading relative z-30">
-            <div class="gsap-hero-title sm:mt-10 mt-10 flex flex-col items-center relative">
-                <h1 id="first-title" style="line-height: 1.7em;" class="gsap-title text-center xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl text-2xl overflow-hidden"><span class="inline-block translate-y-full gsap-title scale-110">Vous accompagner dans votre<br/><span class="font-bold" class="mt-10"><span>transformation digitale</span> en toute sécurité</span></span></h1>
-                <a class="opacity-0 relative -top-2 font-sans gsap-hero-btn cursor-pointer subscribe-button btn-2 rounded-2xl flex items-center shadow-lg sm:mt-8 mt-6 px-8 py-4 text-lg" href="https://www.malt.fr/profile/maximeschellenberger" target="_blank">Voir mon profil sur malt<i class="ml-3 fa-solid fa-arrow-up-right-from-square"></i></a> 
-            </div>
-            <div class="gsap-hero-side relative mt-20">
-                <ul class="sm:text-3xl text-2xl font-bold" style="direction: rtl;">
-                    <li class="mb-6">100%<br/>
-                        <span class="sm:text-lg text-base font-sans font-normal opacity-80">Clients satisfaits</span>
-                    </li>
-                    <li class="mb-6">6+<br/>
-                        <span class="sm:text-lg text-base font-sans font-normal opacity-80">Domaines d'expertise</span>
-                    </li>
-                    <li class="">2+<br/>
-                        <span class="sm:text-lg text-base font-sans font-normal opacity-80">Recommandations</span>
-                    </li>
-                </ul>
-            </div>
+        <div
+          class="sm:pb-72 pb-60 container mx-auto font-heading relative z-30"
+        >
+          <div
+            class="gsap-hero-title sm:mt-10 mt-10 flex flex-col items-center relative"
+          >
+            <h1
+              id="first-title"
+              style="line-height: 1.7em"
+              class="gsap-title text-center xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl text-2xl overflow-hidden"
+            >
+              <span class="inline-block translate-y-full gsap-title scale-110"
+                >Vous accompagner dans votre<br /><span
+                  class="font-bold"
+                  class="mt-10"
+                  ><span>transformation digitale</span> en toute sécurité</span
+                ></span
+              >
+            </h1>
+            <a
+              class="opacity-0 relative -top-2 font-sans gsap-hero-btn cursor-pointer subscribe-button btn-2 rounded-2xl flex items-center shadow-lg sm:mt-8 mt-6 px-8 py-4 text-lg"
+              href="https://www.malt.fr/profile/maximeschellenberger"
+              target="_blank"
+              >Voir mon profil sur malt<i
+                class="ml-3 fa-solid fa-arrow-up-right-from-square"
+              ></i
+            ></a>
+          </div>
+          <div class="gsap-hero-side relative mt-20">
+            <ul class="sm:text-3xl text-2xl font-bold" style="direction: rtl">
+              <li class="mb-6">
+                100%<br />
+                <span
+                  class="sm:text-lg text-base font-sans font-normal opacity-80"
+                  >Clients satisfaits</span
+                >
+              </li>
+              <li class="mb-6">
+                6+<br />
+                <span
+                  class="sm:text-lg text-base font-sans font-normal opacity-80"
+                  >Domaines d'expertise</span
+                >
+              </li>
+              <li class="">
+                2+<br />
+                <span
+                  class="sm:text-lg text-base font-sans font-normal opacity-80"
+                  >Recommandations</span
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="gsap-webgl webgl absolute w-12/12 h-12/12 sm:bottom-60 bottom-20 left-1/2 -translate-x-1/2 translate-y-1/2 overflow-hidden"></div>
-    </div>
-</header>
-<section class="w-full text-white bg-[#EFEFEF]">
-    <div class="relative -top-32 z-20 rounded-xl">
+        <div
+          class="gsap-webgl webgl absolute w-12/12 h-12/12 sm:bottom-60 bottom-20 left-1/2 -translate-x-1/2 translate-y-1/2 overflow-hidden"
+        ></div>
+      </div>
+    </header>
+    <section class="w-full text-white bg-[#EFEFEF]">
+      <div class="relative -top-32 z-20 rounded-xl">
         <div class="text-light-blue border-b-2 border-[#CDD7F3] lg:px-24">
-            <div class="md:py-8 md:px-12 sm:py-12 sm:px-10 px-6 py-8 lg:container md:container sm:w-full w-full rounded-t-xl bg-[#FAFAFA] mx-auto flex justify-between items-center">
-                <h2 class="xl:text-4xl xl:leading-relaxed lg:text-3xl lg:leading-relaxed md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl font-heading leading-relaxed">Vous accompagner dans de<br/><span class="font-bold">nombreux domaines</span></h2>
-                <div class="xl:w-28 xl:mt-1 lg:mt-0 lg:w-20 md:w-20 sm:w-18 xl:static lg:static md:static sm:static w-20">
-                    <svg width="100%" height="100%" viewBox="0 0 153 154" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_49_13)">
-                            <rect class="gsap-rect-1" width="32" height="32" rx="4" fill="#1A4AD7" fill-opacity="0.4"/>
-                            <rect class="gsap-rect-3" x="80" width="33" height="32" rx="4" fill="#1A4AD7" fill-opacity="0.8"/>
-                            <rect class="gsap-rect-4" x="121" width="32" height="32" rx="4" fill="#1A4AD7"/>
-                            <rect class="gsap-rect-1" x="40" y="40" width="33" height="33" rx="4" fill="#1A4AD7" fill-opacity="0.4"/>
-                            <rect class="gsap-rect-2" x="80" y="40" width="33" height="33" rx="4" fill="#1A4AD7" fill-opacity="0.6"/>
-                            <rect class="gsap-rect-3" x="121" y="40" width="32" height="33" rx="4" fill="#1A4AD7" fill-opacity="0.8"/>
-                            <rect class="gsap-rect-2" x="121" y="81" width="32" height="33" rx="4" fill="#1A4AD7" fill-opacity="0.6"/>
-                            <rect class="gsap-rect-1" x="80" y="81" width="33" height="33" rx="4" fill="#1A4AD7" fill-opacity="0.4"/>
-                            <rect class="gsap-rect-1" x="121" y="122" width="32" height="32" rx="4" fill="#1A4AD7" fill-opacity="0.4"/>
-                            <rect class="gsap-rect-2" x="40" width="33" height="32" rx="4" fill="#1A4AD7" fill-opacity="0.6"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_49_13">
-                                <rect width="153" height="154" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
+          <div
+            class="md:py-8 md:px-12 sm:py-12 sm:px-10 px-6 py-8 lg:container md:container sm:w-full w-full rounded-t-xl bg-[#FAFAFA] mx-auto flex justify-between items-center"
+          >
+            <h2
+              class="xl:text-4xl xl:leading-relaxed lg:text-3xl lg:leading-relaxed md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl font-heading leading-relaxed"
+            >
+              Vous accompagner dans de<br /><span class="font-bold"
+                >nombreux domaines</span
+              >
+            </h2>
+            <div
+              class="xl:w-28 xl:mt-1 lg:mt-0 lg:w-20 md:w-20 sm:w-18 xl:static lg:static md:static sm:static w-20"
+            >
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 153 154"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_49_13)">
+                  <rect
+                    class="gsap-rect-1"
+                    width="32"
+                    height="32"
+                    rx="4"
+                    fill="#1A4AD7"
+                    fill-opacity="0.4"
+                  />
+                  <rect
+                    class="gsap-rect-3"
+                    x="80"
+                    width="33"
+                    height="32"
+                    rx="4"
+                    fill="#1A4AD7"
+                    fill-opacity="0.8"
+                  />
+                  <rect
+                    class="gsap-rect-4"
+                    x="121"
+                    width="32"
+                    height="32"
+                    rx="4"
+                    fill="#1A4AD7"
+                  />
+                  <rect
+                    class="gsap-rect-1"
+                    x="40"
+                    y="40"
+                    width="33"
+                    height="33"
+                    rx="4"
+                    fill="#1A4AD7"
+                    fill-opacity="0.4"
+                  />
+                  <rect
+                    class="gsap-rect-2"
+                    x="80"
+                    y="40"
+                    width="33"
+                    height="33"
+                    rx="4"
+                    fill="#1A4AD7"
+                    fill-opacity="0.6"
+                  />
+                  <rect
+                    class="gsap-rect-3"
+                    x="121"
+                    y="40"
+                    width="32"
+                    height="33"
+                    rx="4"
+                    fill="#1A4AD7"
+                    fill-opacity="0.8"
+                  />
+                  <rect
+                    class="gsap-rect-2"
+                    x="121"
+                    y="81"
+                    width="32"
+                    height="33"
+                    rx="4"
+                    fill="#1A4AD7"
+                    fill-opacity="0.6"
+                  />
+                  <rect
+                    class="gsap-rect-1"
+                    x="80"
+                    y="81"
+                    width="33"
+                    height="33"
+                    rx="4"
+                    fill="#1A4AD7"
+                    fill-opacity="0.4"
+                  />
+                  <rect
+                    class="gsap-rect-1"
+                    x="121"
+                    y="122"
+                    width="32"
+                    height="32"
+                    rx="4"
+                    fill="#1A4AD7"
+                    fill-opacity="0.4"
+                  />
+                  <rect
+                    class="gsap-rect-2"
+                    x="40"
+                    width="33"
+                    height="32"
+                    rx="4"
+                    fill="#1A4AD7"
+                    fill-opacity="0.6"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_49_13">
+                    <rect width="153" height="154" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
             </div>
+          </div>
         </div>
-        <div class="mx-auto text-light-blue border-b-2 border-[#CDD7F3] lg:px-24">
-            <div class="sm:px-24 sm:py-10 py-8 px-8 lg:container md:container sm:w-full w-full bg-[#FAFAFA] mx-auto relative">
-                <div class="service1 before:absolute before:content-['01'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]">
-                    <h3 class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4">Création de site internet</h3>
-                    <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">Démarquez-vous de la concurrence avec un site optimisé et ergonomique</p>
-                </div>
+        <div
+          class="mx-auto text-light-blue border-b-2 border-[#CDD7F3] lg:px-24"
+        >
+          <div
+            class="sm:px-24 sm:py-10 py-8 px-8 lg:container md:container sm:w-full w-full bg-[#FAFAFA] mx-auto relative"
+          >
+            <div
+              class="service1 before:absolute before:content-['01'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]"
+            >
+              <h3
+                class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4"
+              >
+                Création de site internet
+              </h3>
+              <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">
+                Démarquez-vous de la concurrence avec un site optimisé et
+                ergonomique
+              </p>
             </div>
+          </div>
         </div>
-        <div class="relative mx-auto text-light-blue border-b-2 border-[#CDD7F3] lg:px-24">
-            <div class="sm:px-24 sm:py-10 py-8 px-8 lg:container md:container sm:w-full w-full bg-[#FAFAFA] mx-auto relative">
-                <div class="service2 before:absolute before:content-['02'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]">
-                    <h3 class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4">Refonte de site internet</h3>
-                    <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">Renforcer votre image de marque avec un site performant et adapté à votre activité </p>
-                </div>
+        <div
+          class="relative mx-auto text-light-blue border-b-2 border-[#CDD7F3] lg:px-24"
+        >
+          <div
+            class="sm:px-24 sm:py-10 py-8 px-8 lg:container md:container sm:w-full w-full bg-[#FAFAFA] mx-auto relative"
+          >
+            <div
+              class="service2 before:absolute before:content-['02'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]"
+            >
+              <h3
+                class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4"
+              >
+                Refonte de site internet
+              </h3>
+              <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">
+                Renforcer votre image de marque avec un site performant et
+                adapté à votre activité
+              </p>
             </div>
+          </div>
         </div>
-        <div class="relative mx-auto text-light-blue border-b-2 border-[#CDD7F3] lg:px-24">
-            <div class="sm:px-24 sm:py-10 py-8 px-8 lg:container md:container sm:w-full w-full bg-[#FAFAFA] mx-auto relative">
-                <div class="service3 before:absolute before:content-['03'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]">
-                    <h3 class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4">Référencement naturel (SEO)</h3>
-                    <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">Augmenter votre traffic en améliorant votre positionnement sur les moteurs de recherche</p>
-                </div>
+        <div
+          class="relative mx-auto text-light-blue border-b-2 border-[#CDD7F3] lg:px-24"
+        >
+          <div
+            class="sm:px-24 sm:py-10 py-8 px-8 lg:container md:container sm:w-full w-full bg-[#FAFAFA] mx-auto relative"
+          >
+            <div
+              class="service3 before:absolute before:content-['03'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]"
+            >
+              <h3
+                class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4"
+              >
+                Référencement naturel (SEO)
+              </h3>
+              <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">
+                Augmenter votre traffic en améliorant votre positionnement sur
+                les moteurs de recherche
+              </p>
             </div>
+          </div>
         </div>
-        <div class="relative mx-auto text-light-blue border-b-2 border-[#CDD7F3] lg:px-24">
-            <div class="sm:px-24 sm:py-10 py-8 px-8 lg:container md:container sm:w-full w-full bg-[#FAFAFA] mx-auto relative">
-                <div class="service4 before:absolute before:content-['04'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]">
-                    <h3 class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4">Référencement payant (SEA)</h3>
-                    <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">Améliorer rapidement votre taux de conversion grâce à l'optimisation des publicités en ligne</p>
-                </div>
+        <div
+          class="relative mx-auto text-light-blue border-b-2 border-[#CDD7F3] lg:px-24"
+        >
+          <div
+            class="sm:px-24 sm:py-10 py-8 px-8 lg:container md:container sm:w-full w-full bg-[#FAFAFA] mx-auto relative"
+          >
+            <div
+              class="service4 before:absolute before:content-['04'] before:sm:top-5 before:top-2 before:left-9 before:font-heading before:text-8xl before:font-bold before:text-[#E2E7F6]"
+            >
+              <h3
+                class="md:text-3xl md:leading-relaxed sm:text-2xl sm:leading-relaxed text-2xl leading-relaxed font-heading font-bold relative z-10 mt-4"
+              >
+                Référencement payant (SEA)
+              </h3>
+              <p class="sm:text-xl mt-4 text-lg opacity-75 text-dark-blue">
+                Améliorer rapidement votre taux de conversion grâce à
+                l'optimisation des publicités en ligne
+              </p>
             </div>
+          </div>
         </div>
         <div class="mx-auto lg:px-24">
-            <div class="flex justify-center lg:container md:container sm:w-full w-full mx-auto bg-[#FAFAFA] rounded-b-xl lg:px-24">
-                <a href="./services" class="cursor-pointer subscribe-button btn-3 shadow-lg rounded-2xl py-4 px-8 font-sans text-lg mt-12 mb-20">Voir tous les services<i class="fa-solid fa-chevron-right ml-3 opacity-80"></i></a>
-            </div>
+          <div
+            class="flex justify-center lg:container md:container sm:w-full w-full mx-auto bg-[#FAFAFA] rounded-b-xl lg:px-24"
+          >
+            <a
+              href="./services"
+              class="cursor-pointer subscribe-button btn-3 shadow-lg rounded-2xl py-4 px-8 font-sans text-lg mt-12 mb-20"
+              >Voir tous les services<i
+                class="fa-solid fa-chevron-right ml-3 opacity-80"
+              ></i
+            ></a>
+          </div>
         </div>
-    </div>
-</section>
-<section class="text-white bg-cover bg-lb -mt-64 sm:pb-36 pb-24 w-full">
-    <div class="xl:w-7/12 lg:w-10/12 md:w-full sm:text-center sm:pt-52 container mx-auto pt-40 px-8 text-left">
-        <h2 class="activity-title md:text-4xl sm:text-3xl sm:p-0 sm:leading-normal text-2xl font-heading leading-relaxed"><span class="relative bg-[#0f349f] inline-flex justify-center items-center sm:p-4 p-3 rounded-2xl sm:mr-4 mr-2" style="bottom: 3px;"><i class="fa-solid fa-rocket sm:text-2xl text-lg"></i></span>Faites <span class="font-bold">décoller</span> votre activité</h2>
-        <p class="activity-text text-[#e6e6e6] sm:text-xl sm:mt-6 mt-4 text-lg" style="line-height: 2.3rem;">Vous souhaitez <span class="font-semibold">booster</span> votre traffic, vos ventes... afin de dégager de plus <span class="font-semibold">gros revenus rapidement</span> ? Les <span class="font-semibold">stratégies digitales</span> sont essentielles pour garantir une croissance <span class="font-semibold">rapide</span> et <span class="font-semibold">durable</span></p>
-    </div>
-    <div class="splide mx-auto container sm:px-16 sm:mt-16 px-8 mt-8">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative sm:py-7 py-6 drop-shadow-xl" data-splide-hash="slide01">
-                    <span class="absolute bottom-10 right-14 text-5xl  font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.6em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-50">1</span>
-                    <div class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-semibold text-lg font-sans">Diagnostic de votre présence en ligne</h3>
-                            <p class="mt-3 leading-relaxed text-normal opacity-80">Un diagnostic précis permettra de détecter vos points faibles sur lesquels travailler en priorité</p>
-                        </div>
-                        <div class="w-full sm:mb-20 mb-24 sm:h-44 h-32 flex justify-center items-center">
-                            <lottie-player
-                            autoplay
-                            loop
-                            mode="normal"
-                            src="https://assets6.lottiefiles.com/packages/lf20_kfm8xsup.json"
-                            style="width: 100%;"
-                            ></lottie-player>
-                        </div>
-                    </div>
-                </li>
-                <li class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative sm:py-7 py-6 drop-shadow-xl" data-splide-hash="slide02">
-                    <span class="absolute bottom-10 right-14 text-5xl font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.8em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-75">2</span>
-                    <div class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-semibold text-lg font-sans">Analyse approfondie de la concurrence</h3>
-                            <p class="mt-3 leading-relaxed text-normal opacity-80">Une analyse concurrentielle est essentielle pour mieux comprendre votre environnement et vous démarquer rapidement </p>
-                        </div>
-                        <div class="w-full mb-20 sm:h-44 h-32 flex justify-center items-center">
-                            <lottie-player
-                            autoplay
-                            loop
-                            mode="normal"
-                            src="https://assets5.lottiefiles.com/private_files/lf30_pguaf3lh.json"
-                            style="width: 100%;"
-                            ></lottie-player>
-                        </div>
-                    </div>
-                </li>
-                <li class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative sm:py-7 py-6 drop-shadow-xl" data-splide-hash="slide03">
-                    <span class="absolute bottom-10 right-14 text-5xl font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.8em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-75">3</span>
-                    <div class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-semibold text-lg font-sans">Élaboration de votre positionnement</h3>
-                            <p class="mt-3 leading-relaxed text-normal opacity-80">La mise en place de stratégies digitales permettront de vous apporter un positionnement pertinent sur le web</p>
-                        </div>
-                        <div class="w-full mb-20 sm:h-44 h-32 flex justify-center items-center">
-                            <lottie-player
-                            autoplay
-                            loop
-                            mode="normal"
-                            src="https://assets7.lottiefiles.com/packages/lf20_9iF0sI.json"
-                            style="width: 100%;"
-                            ></lottie-player>
-                        </div>
-                    </div>
-                </li>
-                <li class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative sm:py-7 py-6 drop-shadow-xl" data-splide-hash="slide04">
-                    <span class="absolute bottom-10 right-14 text-5xl font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.9em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-75">4</span>
-                    <div class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-semibold text-lg font-sans">Production des livrables techniques</h3>
-                            <p class="mt-3 leading-relaxed text-normal opacity-80">La partie technique du projet permettra de réaliser des actions concrètes pour booster votre réputation en ligne</p>
-                        </div>
-                        <div class="w-full mb-20 sm:h-44 h-32 flex justify-center items-center">
-                            <lottie-player
-                            autoplay
-                            loop
-                            mode="normal"
-                            src="https://assets9.lottiefiles.com/private_files/lf30_Gh7uJv.json"
-                            style="width: 100%;"
-                            ></lottie-player>
-                        </div>
-                    </div>
-                </li>
-                <li class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative sm:py-7 py-6 drop-shadow-xl" data-splide-hash="slide05">
-                    <span class="absolute bottom-10 right-14 text-5xl font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.8em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-75">5</span>
-                    <div class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-semibold text-lg font-sans">Ajustement des réalisations</h3>
-                            <p class="mt-3 leading-relaxed text-normal opacity-80">Suivant les retours, des correctifs peuvent être apportés afin d'optimiser au mieux votre croissance sur la toile </p>
-                        </div>
-                        <div class="w-full mb-24 sm:h-44 h-32 flex justify-center items-center">
-                            <lottie-player
-                            autoplay
-                            loop
-                            mode="normal"
-                            src="https://assets9.lottiefiles.com/packages/lf20_fQij9m.json"
-                            style="width: 100%;"
-                            ></lottie-player>
-                        </div>
-                    </div>
-                </li>
-                <li class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative py-6 drop-shadow-xl" data-splide-hash="slide06">
-                    <span class="absolute bottom-10 right-14 text-5xl font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.8em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-75">6</span>
-                    <div class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-semibold text-lg font-sans">Suivi et optimisation des performances</h3>
-                            <p class="mt-3 leading-relaxed text-normal opacity-80">Pour assurer votre pérénnité et conserver de nombreux avantages concurrentiels, un suivi sur le long terme est conseillé</p>
-                        </div>
-                        <div class="w-full mb-20 sm:h-44 h-32 flex justify-center items-center">
-                            <lottie-player
-                            autoplay
-                            loop
-                            mode="normal"
-                            src="https://assets10.lottiefiles.com/packages/lf20_xa0q7ly3.json"
-                            style="width: 100%;"
-                            ></lottie-player>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-<section class="bg-dark-blue md:pb-24 sm:pb-20 w-full px-8 pb-14">
-    <div class="xl:w-7/12 lg:w-10/12 md:w-full sm:text-center container mx-auto md:pt-16 sm:pt-12 pt-8 px-2 text-left">
-        <h2 class="who-am-i-title md:text-4xl sm:text-3xl sm:p-0 sm:leading-normal text-2xl font-heading leading-relaxed text-white"><span class="relative bg-[#0f349f] inline-flex justify-center items-center sm:p-4 p-3 rounded-2xl sm:mr-4 mr-2" style="bottom: 3px;"><i class="fa-solid fa-user sm:text-2xl text-lg"></i></span>Qui <span class="font-bold">suis-je ?</span></h2>
-        <p class="who-am-i-text text-[#e6e6e6] sm:text-xl sm:mt-6 mt-4 text-lg" style="line-height: 2.3rem;">Vous cherchez un <span class="font-semibold">développeur front-end</span>, un <span class="font-semibold">designer UI/UX</span> ou... les deux ? Vous êtes au bon endroit, je serais ravi de vous aider à <span class="font-semibold">concrétiser vos projets</span> et <span class="font-semibold">atteindre vos objectifs</span></p>
-    </div>
-    <div class="who-am-i-bloc xl:w-8/12 lg:w-11/12 bg-[#2e5ee9] rounded-xl mx-auto relative mt-10">
-        <img src="./assets/png/maxime.webp" width="320" height="200" alt="Photo de Maxime" class="sm:absolute relative sm:bottom-0 sm:right-0 xl:w-[320px] sm:w-[240px] w-[200px] sm:mb-0 -mb-2 right-4">
-        <div class="xl:flex-row lg:flex-col flex-col flex items-center justify-center">
-            <div class="sm:p-8 pb-6 pl-6 pr-6">
-                <h3 class="text-2xl text-white font-bold font-heading text-left sm:mt-0 mt-4 relative z-20">Maxime Schellenberger</h3>
-                <p class="xl:w-9/12 md:w-full mt-4 sm:text-lg text-base text-white leading-relaxed text-left">Passionné par la technologie depuis longtemps, je me suis spécialisé en études supérieures dans le design UI/UX, le développement web front-end, le marketing digital et enfin le management de projet web.</p>
-                <div class="sm:mt-0 mt-1">
-                    <span class="px-4 py-2 text-md text-white bg-light-blue opacity-95 rounded-2xl text-base mt-3 inline-block">Dev front-end</span>
-                    <span class="sm:ml-2 ml-0 px-4 py-2 text-md text-white bg-light-blue opacity-95 rounded-2xl text-base mt-3 inline-block">Design UI/UX</span>
-                    <span class="sm:ml-2 sm:mt-0 mt-4 ml-0 px-4 py-2 text-md text-white bg-light-blue opacity-95 rounded-2xl text-base inline-block">Marketing digital</span>
-                </div>
-                <div class="inline-flex justify-center">
-                    <a href="./contact" class="cursor-pointer subscribe-button btn-1 mt-8 rounded-2xl text-white flex items-center shadow-lg px-8 py-4 text-lg">Me contacter</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="bg-lb bg-cover">
-    <section class="w-full px-8 pb-8">
-        <div class="xl:w-7/12 lg:w-10/12 md:w-full sm:text-center container mx-auto md:pt-16 sm:pt-12 pt-8 px-2 text-left">
-            <h2 class="credits-title md:text-4xl sm:text-3xl sm:p-0 sm:leading-normal text-2xl font-heading leading-relaxed text-white"><span class="relative bg-[#0f349f] inline-flex justify-center items-center sm:p-4 p-3 rounded-2xl sm:mr-4 mr-2" style="bottom: 3px;"><i class="fa-solid fa-heart sm:text-2xl text-lg"></i></span>On me <span class="font-bold">recommande</span></h2>
-            <p class="credits-text text-[#e6e6e6] sm:text-xl sm:mt-6 mt-4 text-lg" style="line-height: 2.3rem;">La <span class="font-semibold">confiance</span> grandit naturellement suite à de nouvelles <span class="font-semibold">recommandations</span>. À l'heure actuelle, <span class="font-semibold">chaque client</span> a été <span class="font-semibold">totalement satisfait</span> du travail accompli.</p>
-        </div>
-        <div class="md:mt-10 sm:mt-4 mt-8 drop-shadow-xl xl:container lg:container md:w-full xl:w-10/12 lg:w-11/12 rounded-xl mx-auto flex xl:flex-row flex-col xl:justify-between xl:items-start items-center">
-            <div class="credits-bloc-1 xl:w-[49%] w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]">
-                <h3 class="text-2xl text-white font-bold font-heading">Frédéric Alibert</h3>
-                <h4 class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80">Directeur de l'agence Clôture Arès Toulouse</h4>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base relative mt-4 text-white opacity-90" style="line-height: 1.9em;">
-                J'ai accueilli <span class="font-semibold">Maxime SCHELLENBERGER</span> au sein de l'Agence Clôture Arès. Il a tenu pendant deux ans un poste d'alternant en tant que chef de projet junior dans le digital et développeur WEB. J'ai été particulièrement <span class="font-semibold">satisfait</span> de son <span class="font-semibold">implication</span>, de son <span class="font-semibold">sérieux</span> et du <span class="font-semibold">travail</span> qu'il a mené en <span class="font-semibold">parfaite autonomie</span>. Au cours de ses missions, il a fait preuve d'une implication certaine et d'une réelle <span class="font-semibold">force de proposition</span>, en présentant et mettant en œuvre des <span class="font-semibold">idées innovantes</span> démontrant ses différentes capacités dans les métiers du digital.
-                Au cours de la tenue de son poste, Maxime aura créé un site internet fonctionnel en structurant et organisant en autonomie les multiples domaines techniques d'un tel projet.
-                Je le <span class="font-semibold">recommande</span> vivement.    
-                </p>
-                <p class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50">Commentaire provenant de Malt.fr | 2022</p>
-            </div>
-            <div class="credits-bloc-2 xl:w-[49%] xl:mt-0 mt-8 w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]">
-                <h3 class="text-2xl text-white font-bold font-heading">Jonathan Ernie</h3>
-                <h4 class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80">Responsable marketing de l'agence Clôture Arès Toulouse</h4>
-                <p class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-4" style="line-height: 1.9em;">
-                <span class="font-semibold">Professionnel et impliqué</span> dans son travail, Monsieur Schellenberger a développé notre site et le référencement de notre catalogue.
-    <span class="font-semibold">Je recommande</span>.
-                </p>
-                <p class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50">Commentaire provenant de Malt.fr | 2022</p>
-            </div>
-        </div>
+      </div>
     </section>
-    <footer class="footer-page text-white px-8">
-        <div class="drop-shadow-xl xl:container lg:container md:w-full xl:w-10/12 lg:w-11/12 bg-[#2e5ee9] rounded-tr-xl rounded-tl-xl mx-auto md:py-12 md:px-16 md:pb-16 sm:pb-16 px-8 py-8">
-            <div class="lg:flex lg:justify-between">
-                <div class="mb-6 md:mb-0">
-                    <span class="lg:block md:flex md:justify-center flex justify-center md:-mt-3 sm:mt-4 mt-0">
-                        <img class="w-[180px]" src="./assets/png/logo.png" alt="Logo de l'agence digitale mxs-web" width="180" height="100">
-                    </span>
-                    <div class="sm:flex sm:items-center sm:justify-center rounded-lg mt-6">
-                        <div class="flex mt-4 space-x-5 items-center justify-center sm:mt-0">
-                            <a aria-label="Linkedin" href="https://www.linkedin.com/in/maxime-schellenberger/" target="_blank" class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                                <i class="p-3 fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a aria-label="Dribbble" href="https://dribbble.com/maxsc-dev" target="_blank" class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                                <i class="p-3 fa-brands fa-dribbble"></i>
-                            </a>
-                        </div>
-                    </div>
+    <section class="text-white bg-cover bg-lb -mt-64 sm:pb-36 pb-24 w-full">
+      <div
+        class="xl:w-7/12 lg:w-10/12 md:w-full sm:text-center sm:pt-52 container mx-auto pt-40 px-8 text-left"
+      >
+        <h2
+          class="activity-title md:text-4xl sm:text-3xl sm:p-0 sm:leading-normal text-2xl font-heading leading-relaxed"
+        >
+          <span
+            class="relative bg-[#0f349f] inline-flex justify-center items-center sm:p-4 p-3 rounded-2xl sm:mr-4 mr-2"
+            style="bottom: 3px"
+            ><i class="fa-solid fa-rocket sm:text-2xl text-lg"></i></span
+          >Faites <span class="font-bold">décoller</span> votre activité
+        </h2>
+        <p
+          class="activity-text text-[#e6e6e6] sm:text-xl sm:mt-6 mt-4 text-lg"
+          style="line-height: 2.3rem"
+        >
+          Vous souhaitez <span class="font-semibold">booster</span> votre
+          traffic, vos ventes... afin de dégager de plus
+          <span class="font-semibold">gros revenus rapidement</span> ? Les
+          <span class="font-semibold">stratégies digitales</span> sont
+          essentielles pour garantir une croissance
+          <span class="font-semibold">rapide</span> et
+          <span class="font-semibold">durable</span>
+        </p>
+      </div>
+      <div class="splide mx-auto container sm:px-16 sm:mt-16 px-8 mt-8">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li
+              class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative sm:py-7 py-6 drop-shadow-xl"
+              data-splide-hash="slide01"
+            >
+              <span
+                class="absolute bottom-10 right-14 text-5xl font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.6em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-50"
+                >1</span
+              >
+              <div
+                class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="font-semibold text-lg font-sans">
+                    Diagnostic de votre présence en ligne
+                  </h3>
+                  <p class="mt-3 leading-relaxed text-normal opacity-80">
+                    Un diagnostic précis permettra de détecter vos points
+                    faibles sur lesquels travailler en priorité
+                  </p>
                 </div>
-                <div class="lg:grid lg:grid-cols-2 lg:mt-0 md:mt-8 mt-8 md:flex md:justify-around sm:flex sm:justify-around">
-                    <div class="">
-                        <h2 class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white">Navigation</h2>
-                        <ul class="text-gray-600 space-y-2 dark:text-gray-400">
-                            <li><a href="./" class="hover:underline">Accueil</a></li>
-                            <li><a href="services" class="opacity-75 hover:opacity-100 hover:underline">Services</a></li>
-                            <li><a href="tarifs" class="opacity-75 hover:opacity-100 hover:underline">Offre Petites Structures</a></li>
-                            <li><a href="contact" class="opacity-75 hover:opacity-100 hover:underline">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="lg:ml-8 md:ml-0 sm:ml-0 sm:mt-0 ml-0 mt-6">
-                        <h2 class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white">Légal</h2>
-                        <ul class="text-gray-600 dark:text-gray-400 space-y-2">
-                            <li>
-                                <a href="./mentions-legales" class="opacity-75 hover:underline hover:opacity-100">Mentions légales</a>
-                            </li>
-                            <li>
-                                <a href="./confidentialite" class="opacity-75 hover:underline hover:opacity-100">Politique de confidentialité</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div
+                  class="w-full sm:mb-20 mb-24 sm:h-44 h-32 flex justify-center items-center"
+                >
+                  <lottie-player
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="https://assets6.lottiefiles.com/packages/lf20_kfm8xsup.json"
+                    style="width: 100%"
+                  ></lottie-player>
                 </div>
-            </div>
+              </div>
+            </li>
+            <li
+              class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative sm:py-7 py-6 drop-shadow-xl"
+              data-splide-hash="slide02"
+            >
+              <span
+                class="absolute bottom-10 right-14 text-5xl font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.8em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-75"
+                >2</span
+              >
+              <div
+                class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="font-semibold text-lg font-sans">
+                    Analyse approfondie de la concurrence
+                  </h3>
+                  <p class="mt-3 leading-relaxed text-normal opacity-80">
+                    Une analyse concurrentielle est essentielle pour mieux
+                    comprendre votre environnement et vous démarquer rapidement
+                  </p>
+                </div>
+                <div
+                  class="w-full mb-20 sm:h-44 h-32 flex justify-center items-center"
+                >
+                  <lottie-player
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="https://assets5.lottiefiles.com/private_files/lf30_pguaf3lh.json"
+                    style="width: 100%"
+                  ></lottie-player>
+                </div>
+              </div>
+            </li>
+            <li
+              class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative sm:py-7 py-6 drop-shadow-xl"
+              data-splide-hash="slide03"
+            >
+              <span
+                class="absolute bottom-10 right-14 text-5xl font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.8em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-75"
+                >3</span
+              >
+              <div
+                class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="font-semibold text-lg font-sans">
+                    Élaboration de votre positionnement
+                  </h3>
+                  <p class="mt-3 leading-relaxed text-normal opacity-80">
+                    La mise en place de stratégies digitales permettront de vous
+                    apporter un positionnement pertinent sur le web
+                  </p>
+                </div>
+                <div
+                  class="w-full mb-20 sm:h-44 h-32 flex justify-center items-center"
+                >
+                  <lottie-player
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="https://assets7.lottiefiles.com/packages/lf20_9iF0sI.json"
+                    style="width: 100%"
+                  ></lottie-player>
+                </div>
+              </div>
+            </li>
+            <li
+              class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative sm:py-7 py-6 drop-shadow-xl"
+              data-splide-hash="slide04"
+            >
+              <span
+                class="absolute bottom-10 right-14 text-5xl font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.9em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-75"
+                >4</span
+              >
+              <div
+                class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="font-semibold text-lg font-sans">
+                    Production des livrables techniques
+                  </h3>
+                  <p class="mt-3 leading-relaxed text-normal opacity-80">
+                    La partie technique du projet permettra de réaliser des
+                    actions concrètes pour booster votre réputation en ligne
+                  </p>
+                </div>
+                <div
+                  class="w-full mb-20 sm:h-44 h-32 flex justify-center items-center"
+                >
+                  <lottie-player
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="https://assets9.lottiefiles.com/private_files/lf30_Gh7uJv.json"
+                    style="width: 100%"
+                  ></lottie-player>
+                </div>
+              </div>
+            </li>
+            <li
+              class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative sm:py-7 py-6 drop-shadow-xl"
+              data-splide-hash="slide05"
+            >
+              <span
+                class="absolute bottom-10 right-14 text-5xl font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.8em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-75"
+                >5</span
+              >
+              <div
+                class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="font-semibold text-lg font-sans">
+                    Ajustement des réalisations
+                  </h3>
+                  <p class="mt-3 leading-relaxed text-normal opacity-80">
+                    Suivant les retours, des correctifs peuvent être apportés
+                    afin d'optimiser au mieux votre croissance sur la toile
+                  </p>
+                </div>
+                <div
+                  class="w-full mb-24 sm:h-44 h-32 flex justify-center items-center"
+                >
+                  <lottie-player
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="https://assets9.lottiefiles.com/packages/lf20_fQij9m.json"
+                    style="width: 100%"
+                  ></lottie-player>
+                </div>
+              </div>
+            </li>
+            <li
+              class="splide__slide bg-[#2e5ee9] rounded-xl mx-auto flex flex-col justify-center relative py-6 drop-shadow-xl"
+              data-splide-hash="slide06"
+            >
+              <span
+                class="absolute bottom-10 right-14 text-5xl font-semibold italic rounded-full flex justify-center items-center before:absolute before:content-[''] before:right-[0.8em] before:w-6 before:h-0.5 before:bg-[white] before:opacity-75"
+                >6</span
+              >
+              <div
+                class="splide__slide__container w-10/12 mx-auto flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="font-semibold text-lg font-sans">
+                    Suivi et optimisation des performances
+                  </h3>
+                  <p class="mt-3 leading-relaxed text-normal opacity-80">
+                    Pour assurer votre pérénnité et conserver de nombreux
+                    avantages concurrentiels, un suivi sur le long terme est
+                    conseillé
+                  </p>
+                </div>
+                <div
+                  class="w-full mb-20 sm:h-44 h-32 flex justify-center items-center"
+                >
+                  <lottie-player
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="https://assets10.lottiefiles.com/packages/lf20_xa0q7ly3.json"
+                    style="width: 100%"
+                  ></lottie-player>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-    </footer>
-</div>
-</body>
+      </div>
+    </section>
+    <section class="bg-[#f4f4f4] md:pb-24 sm:pb-20 w-full px-8 pb-14">
+      <div
+        class="xl:w-7/12 lg:w-10/12 md:w-full sm:text-center container mx-auto md:pt-16 sm:pt-12 pt-8 px-2 text-left"
+      >
+        <h2
+          class="who-am-i-title md:text-4xl sm:text-3xl sm:p-0 sm:leading-normal text-2xl font-heading leading-relaxed"
+        >
+          <span
+            class="relative bg-[#0f349f] inline-flex justify-center items-center sm:p-4 p-3 rounded-2xl sm:mr-4 mr-2"
+            style="bottom: 3px"
+            ><i
+              class="fa-solid fa-user sm:text-2xl text-lg bg-[#0f349f] text-white"
+            ></i></span
+          >Qui <span class="font-bold">suis-je ?</span>
+        </h2>
+        <p
+          class="who-am-i-text text-[#0f349f] sm:text-xl sm:mt-6 mt-4 text-lg"
+          style="line-height: 2.3rem"
+        >
+          Vous cherchez un
+          <span class="font-semibold">développeur front-end</span>, un
+          <span class="font-semibold">designer UI/UX</span> ou... les deux ?
+          Vous êtes au bon endroit, je serais ravi de vous aider à
+          <span class="font-semibold">concrétiser vos projets</span> et
+          <span class="font-semibold">atteindre vos objectifs</span>
+        </p>
+      </div>
+      <div
+        style="
+          background-color: #fff;
+          background-image: linear-gradient(
+            to bottom right,
+            transparent calc(80%),
+            rgb(232, 222, 186) calc(70% + 1px)
+          );
+          background-size: 50% 80%;
+          background-position: right -1px bottom -1px;
+          background-repeat: no-repeat;
+        "
+        class="who-am-i-bloc xl:w-8/12 lg:w-11/12 rounded-xl mx-auto relative mt-10"
+      >
+        <img
+          src="./assets/png/maxime.webp"
+          width="320"
+          height="200"
+          alt="Photo de Maxime"
+          class="sm:absolute relative sm:bottom-0 sm:right-0 xl:w-[320px] sm:w-[240px] w-[200px] sm:mb-0 -mb-2 right-4"
+        />
+        <div
+          class="xl:flex-row lg:flex-col flex-col flex items-center justify-center"
+        >
+          <div class="sm:p-8 pb-6 pl-6 pr-6">
+            <h3
+              class="text-2xl text-[#0f349f] font-bold font-heading text-left sm:mt-0 mt-4 relative z-20"
+            >
+              Maxime Schellenberger
+            </h3>
+            <p
+              class="xl:w-9/12 md:w-full mt-4 sm:text-lg text-base text-[#0f349f] leading-relaxed text-left"
+            >
+              Passionné par la technologie depuis longtemps, je me suis
+              spécialisé en études supérieures dans le design UI/UX, le
+              développement web front-end, le marketing digital et enfin le
+              management de projet web.
+            </p>
+            <div class="sm:mt-0 mt-1">
+              <span
+                class="px-4 py-2 text-md text-hover-dark-blue bg-[#c7cee9] opacity-95 rounded-2xl text-base mt-3 inline-block"
+                >Dev front-end</span
+              >
+              <span
+                class="sm:ml-2 ml-0 px-4 py-2 text-md text-hover-dark-blue bg-[#c7dee9] opacity-95 rounded-2xl text-base mt-3 inline-block"
+                >Design UI/UX</span
+              >
+              <span
+                class="sm:ml-2 sm:mt-0 mt-4 ml-0 px-4 py-2 text-md text-hover-dark-blue bg-[#c7e9e4] opacity-95 rounded-2xl text-base inline-block"
+                >Marketing digital</span
+              >
+            </div>
+            <div class="inline-flex justify-center">
+              <a
+                href="./contact"
+                class="cursor-pointer subscribe-button btn-1 mt-8 rounded-2xl text-white flex items-center shadow-lg px-8 py-4 text-lg"
+                >Me contacter</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-lb bg-cover">
+      <section class="w-full px-8 pb-8">
+        <div
+          class="xl:w-7/12 lg:w-10/12 md:w-full sm:text-center container mx-auto md:pt-16 sm:pt-12 pt-8 px-2 text-left"
+        >
+          <h2
+            class="credits-title md:text-4xl sm:text-3xl sm:p-0 sm:leading-normal text-2xl font-heading leading-relaxed text-white"
+          >
+            <span
+              class="relative bg-[#0f349f] inline-flex justify-center items-center sm:p-4 p-3 rounded-2xl sm:mr-4 mr-2"
+              style="bottom: 3px"
+              ><i class="fa-solid fa-heart sm:text-2xl text-lg"></i></span
+            >On me <span class="font-bold">recommande</span>
+          </h2>
+          <p
+            class="credits-text text-[#e6e6e6] sm:text-xl sm:mt-6 mt-4 text-lg"
+            style="line-height: 2.3rem"
+          >
+            La <span class="font-semibold">confiance</span> grandit
+            naturellement suite à de nouvelles
+            <span class="font-semibold">recommandations</span>. À l'heure
+            actuelle, <span class="font-semibold">chaque client</span> a été
+            <span class="font-semibold">totalement satisfait</span> du travail
+            accompli.
+          </p>
+        </div>
+        <div
+          class="md:mt-10 sm:mt-4 mt-8 drop-shadow-xl xl:container lg:container md:w-full xl:w-10/12 lg:w-11/12 rounded-xl mx-auto flex xl:flex-row flex-col xl:justify-between xl:items-start items-center"
+        >
+          <div
+            class="credits-bloc-1 xl:w-[49%] w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]"
+          >
+            <h3 class="text-2xl text-white font-bold font-heading">
+              Frédéric Alibert
+            </h3>
+            <h4
+              class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80"
+            >
+              Directeur de l'agence Clôture Arès Toulouse
+            </h4>
+            <p
+              class="xl:text-lg lg:text-lg md:text-lg text-base relative mt-4 text-white opacity-90"
+              style="line-height: 1.9em"
+            >
+              J'ai accueilli
+              <span class="font-semibold">Maxime SCHELLENBERGER</span> au sein
+              de l'Agence Clôture Arès. Il a tenu pendant deux ans un poste
+              d'alternant en tant que chef de projet junior dans le digital et
+              développeur WEB. J'ai été particulièrement
+              <span class="font-semibold">satisfait</span> de son
+              <span class="font-semibold">implication</span>, de son
+              <span class="font-semibold">sérieux</span> et du
+              <span class="font-semibold">travail</span> qu'il a mené en
+              <span class="font-semibold">parfaite autonomie</span>. Au cours de
+              ses missions, il a fait preuve d'une implication certaine et d'une
+              réelle <span class="font-semibold">force de proposition</span>, en
+              présentant et mettant en œuvre des
+              <span class="font-semibold">idées innovantes</span> démontrant ses
+              différentes capacités dans les métiers du digital. Au cours de la
+              tenue de son poste, Maxime aura créé un site internet fonctionnel
+              en structurant et organisant en autonomie les multiples domaines
+              techniques d'un tel projet. Je le
+              <span class="font-semibold">recommande</span> vivement.
+            </p>
+            <p
+              class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50"
+            >
+              Commentaire provenant de Malt.fr | 2022
+            </p>
+          </div>
+          <div
+            class="credits-bloc-2 xl:w-[49%] xl:mt-0 mt-8 w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]"
+          >
+            <h3 class="text-2xl text-white font-bold font-heading">
+              Jonathan Ernie
+            </h3>
+            <h4
+              class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80"
+            >
+              Responsable marketing de l'agence Clôture Arès Toulouse
+            </h4>
+            <p
+              class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-4"
+              style="line-height: 1.9em"
+            >
+              <span class="font-semibold">Professionnel et impliqué</span> dans
+              son travail, Monsieur Schellenberger a développé notre site et le
+              référencement de notre catalogue.
+              <span class="font-semibold">Je recommande</span>.
+            </p>
+            <p
+              class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50"
+            >
+              Commentaire provenant de Malt.fr | 2022
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-page text-white px-8">
+        <div
+          class="drop-shadow-xl xl:container lg:container md:w-full xl:w-10/12 lg:w-11/12 bg-[#2e5ee9] rounded-tr-xl rounded-tl-xl mx-auto md:py-12 md:px-16 md:pb-16 sm:pb-16 px-8 py-8"
+        >
+          <div class="lg:flex lg:justify-between">
+            <div class="mb-6 md:mb-0">
+              <span
+                class="lg:block md:flex md:justify-center flex justify-center md:-mt-3 sm:mt-4 mt-0"
+              >
+                <img
+                  class="w-[180px]"
+                  src="./assets/png/logo.png"
+                  alt="Logo de l'agence digitale mxs-web"
+                  width="180"
+                  height="100"
+                />
+              </span>
+              <div
+                class="sm:flex sm:items-center sm:justify-center rounded-lg mt-6"
+              >
+                <div
+                  class="flex mt-4 space-x-5 items-center justify-center sm:mt-0"
+                >
+                  <a
+                    aria-label="Linkedin"
+                    href="https://www.linkedin.com/in/maxime-schellenberger/"
+                    target="_blank"
+                    class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                  >
+                    <i class="p-3 fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    aria-label="Dribbble"
+                    href="https://dribbble.com/maxsc-dev"
+                    target="_blank"
+                    class="bg-[#2756df] rounded-full text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                  >
+                    <i class="p-3 fa-brands fa-dribbble"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:grid lg:grid-cols-2 lg:mt-0 md:mt-8 mt-8 md:flex md:justify-around sm:flex sm:justify-around"
+            >
+              <div class="">
+                <h2
+                  class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white"
+                >
+                  Navigation
+                </h2>
+                <ul class="text-gray-600 space-y-2 dark:text-gray-400">
+                  <li><a href="./" class="hover:underline">Accueil</a></li>
+                  <li>
+                    <a
+                      href="services"
+                      class="opacity-75 hover:opacity-100 hover:underline"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tarifs"
+                      class="opacity-75 hover:opacity-100 hover:underline"
+                      >Offre Petites Structures</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="contact"
+                      class="opacity-75 hover:opacity-100 hover:underline"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="lg:ml-8 md:ml-0 sm:ml-0 sm:mt-0 ml-0 mt-6">
+                <h2
+                  class="mb-4 text-xl font-semibold text-gray-900 font-heading dark:text-white"
+                >
+                  Légal
+                </h2>
+                <ul class="text-gray-600 dark:text-gray-400 space-y-2">
+                  <li>
+                    <a
+                      href="./mentions-legales"
+                      class="opacity-75 hover:underline hover:opacity-100"
+                      >Mentions légales</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./confidentialite"
+                      class="opacity-75 hover:underline hover:opacity-100"
+                      >Politique de confidentialité</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
