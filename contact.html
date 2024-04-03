@@ -43,7 +43,7 @@
     />
     <script type="module" src="./js/tarifs.js"></script>
   </head>
-  <body class="bg-[#f4f4f4]">
+  <body class="bg-light-blue">
     <div
       id="menu-mobile"
       class="w-full bg-light-blue h-screen top-0 z-40 absolute xl:hidden hidden text-white sm:px-12 px-6 xl:py-0 md:py-4 py-4"
@@ -160,7 +160,7 @@
         </nav>
       </div>
     </header>
-    <section class="w-full bg-[#f4f4f4] text-[#20204e]">
+    <section class="w-full bg-[#f4f4f4] text-[#20204e] xl:pb-20 pb-8">
       <div class="sm:px-12 px-6 xl:py-0 md:py-4 py-4">
         <div
           class="container mx-auto flex xl:flex-row lf:flex-row md:flex-col sm:flex-col flex-col justify-between items-center"
@@ -212,13 +212,24 @@
       <div class="sm:px-12 px-6 xl:mt-12 mt-2">
         <div class="mx-auto container flex xl:flex-row flex-col">
           <a
+          style="
+              background-color: #fff;
+              background-image: linear-gradient(
+                to bottom right,
+                transparent calc(70%),
+                rgb(186, 221, 232) calc(65% + 1px)
+              );
+              background-size: 30% 65%;
+              background-position: right bottom -1px;
+              background-repeat: no-repeat;
+            "
             href="https://calendly.com/mxs-web/15min"
             target="_blank"
-            class="bg-white xl:w-[350px] w-full h-28 px-6 flex justify-start items-start rounded-xl"
+            class="xl:w-[350px] w-full h-28 px-6 flex justify-start items-start rounded-xl shadow-sm"
           >
             <span class="h-full items-center flex rounded-full mr-6">
               <span
-                class="bg-[#bacee8] rounded-xl items-center shadow-lg px-8 py-4 text-lg cursor-pointer inline-flex w-16 justify-center"
+                class="bg-[#c4d8fc] rounded-xl items-center shadow-lg px-8 py-4 text-lg cursor-pointer inline-flex w-16 justify-center"
               >
                 <i class="fa-solid fa-calendar text-2xl"></i>
               </span>
@@ -231,12 +242,23 @@
             </span>
           </a>
           <a
+          style="
+              background-color: #fff;
+              background-image: linear-gradient(
+                to bottom right,
+                transparent calc(65%),
+                rgb(186, 232, 208) calc(65% + 1px)
+              );
+              background-size: 30% 65%;
+              background-position: right bottom -1px;
+              background-repeat: no-repeat;
+            "
             href="tel:+33782208186"
-            class="bg-white xl:ml-8 xl:mt-0 ml-0 lg:mt-6 mt-6 xl:w-[350px] w-full h-28 px-6 flex justify-start items-start rounded-xl"
+            class="bg-white xl:ml-8 xl:mt-0 ml-0 lg:mt-6 mt-6 xl:w-[350px] w-full h-28 px-6 flex justify-start items-start rounded-xl shadow-sm"
           >
             <span class="h-full items-center flex rounded-full mr-6">
               <span
-                class="bg-[#9fe1bf] rounded-xl items-center shadow-lg px-8 py-4 text-lg cursor-pointer inline-flex w-16 justify-center"
+                class="bg-[#c4d8fc] rounded-xl items-center shadow-lg px-8 py-4 text-lg cursor-pointer inline-flex w-16 justify-center"
               >
                 <i class="fa-solid fa-phone text-2xl text-[#20204e]"></i>
               </span>
@@ -247,12 +269,23 @@
             </span>
           </a>
           <a
+          style="
+              background-color: #fff;
+              background-image: linear-gradient(
+                to bottom right,
+                transparent calc(65%),
+                rgb(208, 232, 186) calc(65% + 1px)
+              );
+              background-size: 30% 65%;
+              background-position: right bottom -1px;
+              background-repeat: no-repeat;
+            "
             href="mailto:contact@mxs-web.fr"
-            class="bg-white xl:ml-8 xl:mt-0 ml-0 mt-6 w-full xl:w-[350px] h-28 px-6 flex justify-start items-start rounded-xl"
+            class="bg-white xl:ml-8 xl:mt-0 ml-0 mt-6 w-full xl:w-[350px] h-28 px-6 flex justify-start items-start rounded-xl shadow-sm"
           >
             <span class="h-full items-center flex rounded-full mr-6">
               <span
-                class="subscribe-btn bg-[#badde8] rounded-xl items-center shadow-lg px-8 py-4 text-lg cursor-pointer inline-flex w-16 justify-center"
+                class="subscribe-btn bg-[#c4d8fc] rounded-xl items-center shadow-lg px-8 py-4 text-lg cursor-pointer inline-flex w-16 justify-center"
               >
                 <i class="fa-solid fa-envelope text-2xl"></i>
               </span>
@@ -266,7 +299,7 @@
       </div>
     </section>
     <footer
-      class="text-white xl:mt-20 mt-8 xl:px-12 lg:px-12 md:px-12 sm:px-12 px-6 bg-[#f4f4f4]"
+      class="text-white xl:px-12 lg:px-12 md:px-12 sm:px-12 px-6 bg-[#f4f4f4]"
     >
       <div
         class="drop-shadow-xl xl:container lg:container md:container sm:w-full bg-light-blue rounded-tr-xl rounded-tl-xl mx-auto md:py-12 md:px-16 md:pb-16 sm:pb-16 px-8 py-8"
