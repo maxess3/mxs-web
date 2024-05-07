@@ -41,6 +41,7 @@
       href="./node_modules/@fortawesome/fontawesome-free/css/solid.min.css"
     />
     <script type="module" src="./js/index.js"></script>
+    <script src="/node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -123,8 +124,19 @@
     </div>
     <header class="w-full text-white bg-cover bg-lb relative overflow-hidden">
       <!---- NAV CTN ---->
-      <div style="background: rgba(25,74,212,1);
-      background: linear-gradient(150deg, rgba(25,74,212,1) 0%, rgba(25,74,212,1) 38%, rgba(25,74,212,1) 55%, rgba(25,118,212,1) 90%);" class="sm:px-12 px-6 xl:py-0 md:py-4 py-4">
+      <div
+        style="
+          background: rgba(25, 74, 212, 1);
+          background: linear-gradient(
+            150deg,
+            rgba(25, 74, 212, 1) 0%,
+            rgba(25, 74, 212, 1) 38%,
+            rgba(25, 74, 212, 1) 55%,
+            rgba(25, 118, 212, 1) 90%
+          );
+        "
+        class="sm:px-12 px-6 xl:py-0 md:py-4 py-4"
+      >
         <nav class="block container mx-auto relative">
           <div
             class="absolute xl:block hidden -bottom-11 right-0 rounded-xl items-center italic"
@@ -167,7 +179,9 @@
               class="hidden xl:flex items-center justify-center w-full text-lg font-normal"
             >
               <li class="mx-10"><a href="./">Accueil</a></li>
-              <li class="mx-10 opacity-75"><a href="./services">Services</a></li>
+              <li class="mx-10 opacity-75">
+                <a href="./services">Services</a>
+              </li>
               <li class="mx-10 opacity-75">
                 <a href="./tarifs">Offre Petites Structures</a>
               </li>
@@ -807,11 +821,9 @@
           </p>
         </div>
         <div
-          class="xl:w-10/12 lg:w-11/12 grid xl:gap-6 xl:grid-cols-2 md:mt-10 sm:mt-4 mt-8 drop-shadow-xl xl:container lg:container md:w-full rounded-xl mx-auto  xl:items-start items-center"
+          class="xl:w-10/12 lg:w-11/12 grid xl:gap-6 xl:grid-cols-2 md:mt-10 sm:mt-4 mt-8 drop-shadow-xl xl:container lg:container md:w-full rounded-xl mx-auto xl:items-start items-center"
         >
-          <div
-            class="credits-bloc-1 w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]"
-          >
+          <div class="credits-bloc-1 w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]">
             <h3 class="text-2xl text-white font-bold font-heading">
               Frédéric Alibert
             </h3>
@@ -850,62 +862,60 @@
               Commentaire provenant de Malt.fr | 2022
             </p>
           </div>
-          
+
           <div class="flex flex-col gap-6">
             <div
-            class="credits-bloc-2 xl:mt-0 mt-8 w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]"
-          >
-            <h3 class="text-2xl text-white font-bold font-heading">
-              Gilles Poirier
-            </h3>
-            <h4
-              class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80"
+              class="credits-bloc-2 xl:mt-0 mt-8 w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]"
             >
-              Dirigeant de la société Net Logic
-            </h4>
-            <p
-              class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-4"
-              style="line-height: 1.9em"
-            >
-            Merci beaucoup, travail soigné et professionnel.
+              <h3 class="text-2xl text-white font-bold font-heading">
+                Gilles Poirier
+              </h3>
+              <h4
+                class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80"
+              >
+                Dirigeant de la société Net Logic
+              </h4>
+              <p
+                class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-4"
+                style="line-height: 1.9em"
+              >
+                Merci beaucoup, travail soigné et professionnel.
 
-
-              <span class="font-semibold">Je recommande</span>.
-            </p>
-            <p
-              class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50"
-            >
-              Commentaire provenant de Malt.fr | 2024
-            </p>
-          </div>
+                <span class="font-semibold">Je recommande</span>.
+              </p>
+              <p
+                class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50"
+              >
+                Commentaire provenant de Malt.fr | 2024
+              </p>
+            </div>
             <div
-            class="credits-bloc-2 xl:mt-0 mt-2 w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]"
-          >
-            <h3 class="text-2xl text-white font-bold font-heading">
-              Jonathan Ernie
-            </h3>
-            <h4
-              class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80"
+              class="credits-bloc-2 xl:mt-0 mt-2 w-full rounded-xl sm:p-8 p-6 bg-[#2e5ee9]"
             >
-              Responsable marketing de l'agence Clôture Arès Toulouse
-            </h4>
-            <p
-              class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-4"
-              style="line-height: 1.9em"
-            >
-              <span class="font-semibold">Professionnel et impliqué</span> dans
-              son travail, Monsieur Schellenberger a développé notre site et le
-              référencement de notre catalogue.
-              <span class="font-semibold">Je recommande</span>.
-            </p>
-            <p
-              class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50"
-            >
-              Commentaire provenant de Malt.fr | 2022
-            </p>
+              <h3 class="text-2xl text-white font-bold font-heading">
+                Jonathan Ernie
+              </h3>
+              <h4
+                class="xl:text-lg lg:text-lg md:text-lg text-base mt-2 text-white opacity-80"
+              >
+                Responsable marketing de l'agence Clôture Arès Toulouse
+              </h4>
+              <p
+                class="xl:text-lg lg:text-lg md:text-lg text-base text-white opacity-90 mt-4"
+                style="line-height: 1.9em"
+              >
+                <span class="font-semibold">Professionnel et impliqué</span>
+                dans son travail, Monsieur Schellenberger a développé notre site
+                et le référencement de notre catalogue.
+                <span class="font-semibold">Je recommande</span>.
+              </p>
+              <p
+                class="sm:text-lg text-base text-right mt-4 italic text-white opacity-50"
+              >
+                Commentaire provenant de Malt.fr | 2022
+              </p>
+            </div>
           </div>
-          </div>
-          
         </div>
       </section>
       <footer class="footer-page text-white px-8">
